@@ -4,35 +4,8 @@
     "https://dataweb.usitc.gov",
     "https://api.census.gov/data/timeseries/intltrade/"
   ],
-  "fetched_at": "2026-03-03T11:02:49.042417Z",
-  "tariff_changes": [
-    {
-      "date": "2026-02-04",
-      "description": "Additional 10% tariff on Chinese imports (Executive Order)",
-      "affected_chapters": [
-        "39",
-        "73",
-        "84",
-        "85"
-      ],
-      "impact": "high",
-      "source": "Federal Register"
-    },
-    {
-      "date": "2026-03-04",
-      "description": "25% tariff on Canadian and Mexican imports (scheduled)",
-      "affected_chapters": [
-        "02",
-        "03",
-        "04",
-        "07",
-        "08",
-        "44"
-      ],
-      "impact": "high",
-      "source": "Executive Order"
-    }
-  ],
+  "fetched_at": "2026-03-03T19:52:13.152921Z",
+  "tariff_changes": [],
   "import_volumes": {
     "02": {
       "name": "Meat & edible meat offal",
