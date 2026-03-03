@@ -1,15 +1,26 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { LayoutDashboard, Package, MapPin, Truck, Shield, Building2, Cpu, AlertTriangle, Globe, Brain } from 'lucide-react';
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import {
+  Star, TrendingUp, Truck, Shield, Package, Building2, MapPin, Target,
+} from 'lucide-react';
+import CustomerHealthScanner from './pages/CustomerHealthScanner';
 import MarketOverview from './pages/MarketOverview';
 import FoodBeverage from './pages/FoodBeverage';
 import RegionalAnalysis from './pages/RegionalAnalysis';
 import FreightSupplyChain from './pages/FreightSupplyChain';
 import TradeTariffs from './pages/TradeTariffs';
 import IndustryDeepDive from './pages/IndustryDeepDive';
-import TechAdoption from './pages/TechAdoption';
 import ThreatIntel from './pages/ThreatIntel';
-import SupplyChainReset from './pages/SupplyChainReset';
-import AIPulse from './pages/AIPulse';
+
+const navLinkClass = ({ isActive }) =>
+  `nav-link flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap transition-colors ${
+    isActive ? 'bg-indigo-600 text-white' : 'text-indigo-200 hover:bg-indigo-900/30'
+  }`;
+
+const sectionLabel = (label) => (
+  <div className="px-4 pt-5 pb-1.5 text-[10px] font-bold tracking-widest text-indigo-400/70 uppercase">
+    {label}
+  </div>
+);
 
 function App() {
   return (
@@ -30,124 +41,51 @@ function App() {
           </div>
 
           <nav className="p-3 flex md:block overflow-x-auto">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <LayoutDashboard className="w-5 h-5 flex-shrink-0" />
-              <span>Market Overview</span>
+            {/* ── MY BUSINESS ────────────────── */}
+            {sectionLabel('My Business')}
+            <NavLink to="/customer-scanner" className={navLinkClass}>
+              <div className="relative">
+                <Target className="w-5 h-5 flex-shrink-0" />
+                <Star className="w-2.5 h-2.5 text-yellow-400 absolute -top-1 -right-1" />
+              </div>
+              <span>Customer Health Scanner</span>
             </NavLink>
 
-            <NavLink
-              to="/food-beverage"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <Package className="w-5 h-5 flex-shrink-0" />
-              <span>Food & Commodity Prices</span>
+            {/* ── MARKET INTEL ────────────────── */}
+            {sectionLabel('Market Intel')}
+            <NavLink to="/market" className={navLinkClass}>
+              <TrendingUp className="w-5 h-5 flex-shrink-0" />
+              <span>Your Industry This Week</span>
             </NavLink>
-
-            <NavLink
-              to="/regional"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <MapPin className="w-5 h-5 flex-shrink-0" />
-              <span>Regional Analysis</span>
-            </NavLink>
-
-            <NavLink
-              to="/freight"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
+            <NavLink to="/freight" className={navLinkClass}>
               <Truck className="w-5 h-5 flex-shrink-0" />
-              <span>Freight & Supply Chain</span>
+              <span>Freight & Logistics</span>
             </NavLink>
-
-            <NavLink
-              to="/trade"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
+            <NavLink to="/trade" className={navLinkClass}>
               <Shield className="w-5 h-5 flex-shrink-0" />
               <span>Trade & Tariffs</span>
             </NavLink>
 
-            <NavLink
-              to="/industry"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
+            {/* ── INDUSTRY ────────────────────── */}
+            {sectionLabel('Industry')}
+            <NavLink to="/food-beverage" className={navLinkClass}>
+              <Package className="w-5 h-5 flex-shrink-0" />
+              <span>Food & Beverage</span>
+            </NavLink>
+            <NavLink to="/industry" className={navLinkClass}>
               <Building2 className="w-5 h-5 flex-shrink-0" />
               <span>Industry Deep Dive</span>
             </NavLink>
-
-            <NavLink
-              to="/tech-adoption"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <Cpu className="w-5 h-5 flex-shrink-0" />
-              <span>Technology Adoption</span>
+            <NavLink to="/regional" className={navLinkClass}>
+              <MapPin className="w-5 h-5 flex-shrink-0" />
+              <span>Regional Analysis</span>
             </NavLink>
 
-            <NavLink
-              to="/threats"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <AlertTriangle className="w-5 h-5 flex-shrink-0" />
-              <span>Threat Intelligence</span>
-            </NavLink>
-
-            <NavLink
-              to="/supply-chain-reset"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <Globe className="w-5 h-5 flex-shrink-0" />
-              <span>Supply Chain Reset</span>
-            </NavLink>
-
-            <NavLink
-              to="/ai-pulse"
-              className={({ isActive }) =>
-                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
-                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
-                }`
-              }
-            >
-              <Brain className="w-5 h-5 flex-shrink-0" />
-              <span>AI Pulse</span>
+            {/* ── RISK ────────────────────────── */}
+            {sectionLabel('Risk')}
+            <NavLink to="/threats" className={navLinkClass}>
+              <Shield className="w-5 h-5 flex-shrink-0 text-red-400" />
+              <span>Risk & Security Center</span>
             </NavLink>
           </nav>
 
@@ -162,16 +100,15 @@ function App() {
         <main className="flex-1 overflow-y-auto">
           <div className="max-w-7xl mx-auto p-4 md:p-8">
             <Routes>
-              <Route path="/" element={<MarketOverview />} />
+              <Route path="/" element={<Navigate to="/customer-scanner" replace />} />
+              <Route path="/customer-scanner" element={<CustomerHealthScanner />} />
+              <Route path="/market" element={<MarketOverview />} />
               <Route path="/food-beverage" element={<FoodBeverage />} />
               <Route path="/regional" element={<RegionalAnalysis />} />
               <Route path="/freight" element={<FreightSupplyChain />} />
               <Route path="/trade" element={<TradeTariffs />} />
               <Route path="/industry" element={<IndustryDeepDive />} />
-              <Route path="/tech-adoption" element={<TechAdoption />} />
               <Route path="/threats" element={<ThreatIntel />} />
-              <Route path="/supply-chain-reset" element={<SupplyChainReset />} />
-              <Route path="/ai-pulse" element={<AIPulse />} />
             </Routes>
           </div>
         </main>
