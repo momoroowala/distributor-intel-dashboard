@@ -1,0 +1,19 @@
+{
+  "last_update": "2026-03-03T11:03:02.974578Z",
+  "results": {
+    "census_wholesale": "OK",
+    "food_prices": "OK",
+    "cbp": "OK",
+    "trade_tariffs": "OK",
+    "bls_employment": "OK",
+    "freight_macro": "OK"
+  },
+  "data_files": [
+    "bls_employment.json",
+    "census_wholesale.json",
+    "county_business_patterns.json",
+    "food_prices.json",
+    "freight_macro.json",
+    "trade_tariffs.json"
+  ]
+}

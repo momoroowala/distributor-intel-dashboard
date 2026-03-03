@@ -1,0 +1,1145 @@
+{
+  "source": "US Census Bureau - County Business Patterns",
+  "url": "https://census.gov/programs-surveys/cbp.html",
+  "fetched_at": "2026-03-03T11:02:42.482844Z",
+  "note": "CBP data has ~2 year lag. Latest available is typically 2022.",
+  "industries": {
+    "423": {
+      "name": "Merchant Wholesalers, Durable Goods",
+      "national": {
+        "establishments": 228785,
+        "employment": 3558762,
+        "annual_payroll_1000s": 326434399
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 30315,
+          "employment": 463209,
+          "annual_payroll_1000s": 53879834
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 21327,
+          "employment": 332445,
+          "annual_payroll_1000s": 30821134
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 18476,
+          "employment": 193887,
+          "annual_payroll_1000s": 15799975
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 9415,
+          "employment": 188026,
+          "annual_payroll_1000s": 17732587
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 13883,
+          "employment": 154445,
+          "annual_payroll_1000s": 13270879
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 8130,
+          "employment": 150797,
+          "annual_payroll_1000s": 12046405
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 8287,
+          "employment": 141498,
+          "annual_payroll_1000s": 12162196
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 7516,
+          "employment": 134423,
+          "annual_payroll_1000s": 11348993
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 7005,
+          "employment": 130555,
+          "annual_payroll_1000s": 12864837
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 6452,
+          "employment": 123549,
+          "annual_payroll_1000s": 10580902
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 7013,
+          "employment": 121859,
+          "annual_payroll_1000s": 11590733
+        },
+        {
+          "state_fips": "27",
+          "state_name": "Minnesota",
+          "establishments": 3979,
+          "employment": 91372,
+          "annual_payroll_1000s": 9308591
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 4019,
+          "employment": 81430,
+          "annual_payroll_1000s": 9672860
+        },
+        {
+          "state_fips": "18",
+          "state_name": "Indiana",
+          "establishments": 4648,
+          "employment": 80782,
+          "annual_payroll_1000s": 6087650
+        },
+        {
+          "state_fips": "55",
+          "state_name": "Wisconsin",
+          "establishments": 4057,
+          "employment": 80733,
+          "annual_payroll_1000s": 6784120
+        }
+      ],
+      "trend": [
+        {
+          "establishments": 236609,
+          "employment": 3497708,
+          "annual_payroll_1000s": 268878109,
+          "year": 2018
+        },
+        {
+          "establishments": 233316,
+          "employment": 3540499,
+          "annual_payroll_1000s": 279698020,
+          "year": 2019
+        },
+        {
+          "establishments": 230053,
+          "employment": 3550754,
+          "annual_payroll_1000s": 280758744,
+          "year": 2020
+        },
+        {
+          "establishments": 230245,
+          "employment": 3457895,
+          "annual_payroll_1000s": 303233060,
+          "year": 2021
+        },
+        {
+          "establishments": 228785,
+          "employment": 3558762,
+          "annual_payroll_1000s": 326434399,
+          "year": 2022
+        }
+      ]
+    },
+    "424": {
+      "name": "Merchant Wholesalers, Nondurable Goods",
+      "national": {
+        "establishments": 123715,
+        "employment": 2334421,
+        "annual_payroll_1000s": 191256828
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 21203,
+          "employment": 314509,
+          "annual_payroll_1000s": 27898958
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 9164,
+          "employment": 182227,
+          "annual_payroll_1000s": 14265909
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 10701,
+          "employment": 150546,
+          "annual_payroll_1000s": 14742809
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 9236,
+          "employment": 145492,
+          "annual_payroll_1000s": 9965861
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 4990,
+          "employment": 129188,
+          "annual_payroll_1000s": 16085880
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 5396,
+          "employment": 120225,
+          "annual_payroll_1000s": 10855833
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 3545,
+          "employment": 95979,
+          "annual_payroll_1000s": 8763560
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 3425,
+          "employment": 73129,
+          "annual_payroll_1000s": 5336875
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 3148,
+          "employment": 70381,
+          "annual_payroll_1000s": 5379521
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 3231,
+          "employment": 69697,
+          "annual_payroll_1000s": 4760649
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 1992,
+          "employment": 60906,
+          "annual_payroll_1000s": 7285188
+        },
+        {
+          "state_fips": "29",
+          "state_name": "Missouri",
+          "establishments": 2095,
+          "employment": 57426,
+          "annual_payroll_1000s": 3474413
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 2803,
+          "employment": 56189,
+          "annual_payroll_1000s": 4422006
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 2686,
+          "employment": 55711,
+          "annual_payroll_1000s": 4025879
+        },
+        {
+          "state_fips": "27",
+          "state_name": "Minnesota",
+          "establishments": 2255,
+          "employment": 42889,
+          "annual_payroll_1000s": 3614571
+        }
+      ],
+      "trend": [
+        {
+          "establishments": 128000,
+          "employment": 2381687,
+          "annual_payroll_1000s": 165902214,
+          "year": 2018
+        },
+        {
+          "establishments": 126042,
+          "employment": 2367720,
+          "annual_payroll_1000s": 169103106,
+          "year": 2019
+        },
+        {
+          "establishments": 124246,
+          "employment": 2328932,
+          "annual_payroll_1000s": 168805722,
+          "year": 2020
+        },
+        {
+          "establishments": 123935,
+          "employment": 2228299,
+          "annual_payroll_1000s": 178455797,
+          "year": 2021
+        },
+        {
+          "establishments": 123715,
+          "employment": 2334421,
+          "annual_payroll_1000s": 191256828,
+          "year": 2022
+        }
+      ]
+    },
+    "4244": {
+      "name": "Grocery & Related Product Wholesalers",
+      "national": {
+        "establishments": 34852,
+        "employment": 846963,
+        "annual_payroll_1000s": 55564732
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 5898,
+          "employment": 115250,
+          "annual_payroll_1000s": 8176791
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 2523,
+          "employment": 65976,
+          "annual_payroll_1000s": 4206433
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 2908,
+          "employment": 61532,
+          "annual_payroll_1000s": 3801561
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 3668,
+          "employment": 55020,
+          "annual_payroll_1000s": 3821249
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 1464,
+          "employment": 45000,
+          "annual_payroll_1000s": 3222803
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 1650,
+          "employment": 39058,
+          "annual_payroll_1000s": 3042118
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 1099,
+          "employment": 38227,
+          "annual_payroll_1000s": 2327341
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 1000,
+          "employment": 26269,
+          "annual_payroll_1000s": 1686321
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 944,
+          "employment": 25224,
+          "annual_payroll_1000s": 1539559
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 742,
+          "employment": 22921,
+          "annual_payroll_1000s": 1371532
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 788,
+          "employment": 22006,
+          "annual_payroll_1000s": 1376106
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 801,
+          "employment": 20739,
+          "annual_payroll_1000s": 1226430
+        },
+        {
+          "state_fips": "24",
+          "state_name": "Maryland",
+          "establishments": 560,
+          "employment": 18222,
+          "annual_payroll_1000s": 1164388
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 738,
+          "employment": 17884,
+          "annual_payroll_1000s": 1309691
+        },
+        {
+          "state_fips": "55",
+          "state_name": "Wisconsin",
+          "establishments": 534,
+          "employment": 16455,
+          "annual_payroll_1000s": 1028137
+        }
+      ],
+      "trend": []
+    },
+    "4241": {
+      "name": "Paper & Paper Product Wholesalers",
+      "national": {
+        "establishments": 7849,
+        "employment": 130973,
+        "annual_payroll_1000s": 9699461
+      },
+      "top_states": [
+        {
+          "state_fips": "29",
+          "state_name": "Missouri",
+          "establishments": 170,
+          "employment": 15675,
+          "annual_payroll_1000s": 543986
+        },
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 1215,
+          "employment": 14723,
+          "annual_payroll_1000s": 1247055
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 467,
+          "employment": 9240,
+          "annual_payroll_1000s": 897237
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 376,
+          "employment": 7498,
+          "annual_payroll_1000s": 729358
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 582,
+          "employment": 7332,
+          "annual_payroll_1000s": 534426
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 490,
+          "employment": 7050,
+          "annual_payroll_1000s": 495033
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 504,
+          "employment": 6584,
+          "annual_payroll_1000s": 465445
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 293,
+          "employment": 5267,
+          "annual_payroll_1000s": 364059
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 273,
+          "employment": 5146,
+          "annual_payroll_1000s": 401203
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 288,
+          "employment": 4682,
+          "annual_payroll_1000s": 357823
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 159,
+          "employment": 4508,
+          "annual_payroll_1000s": 414229
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 231,
+          "employment": 3464,
+          "annual_payroll_1000s": 238877
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 152,
+          "employment": 2753,
+          "annual_payroll_1000s": 190951
+        },
+        {
+          "state_fips": "47",
+          "state_name": "Tennessee",
+          "establishments": 163,
+          "employment": 2700,
+          "annual_payroll_1000s": 196476
+        },
+        {
+          "state_fips": "27",
+          "state_name": "Minnesota",
+          "establishments": 186,
+          "employment": 2563,
+          "annual_payroll_1000s": 216871
+        }
+      ],
+      "trend": []
+    },
+    "4243": {
+      "name": "Lumber & Other Construction Materials",
+      "national": {
+        "establishments": 13663,
+        "employment": 172579,
+        "annual_payroll_1000s": 12975733
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 4751,
+          "employment": 44357,
+          "annual_payroll_1000s": 3384272
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 2545,
+          "employment": 27085,
+          "annual_payroll_1000s": 2897613
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 331,
+          "employment": 9940,
+          "annual_payroll_1000s": 620152
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 710,
+          "employment": 9335,
+          "annual_payroll_1000s": 675309
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 737,
+          "employment": 8848,
+          "annual_payroll_1000s": 469900
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 917,
+          "employment": 8387,
+          "annual_payroll_1000s": 428510
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 191,
+          "employment": 5989,
+          "annual_payroll_1000s": 642198
+        },
+        {
+          "state_fips": "47",
+          "state_name": "Tennessee",
+          "establishments": 106,
+          "employment": 4945,
+          "annual_payroll_1000s": 269091
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 326,
+          "employment": 4456,
+          "annual_payroll_1000s": 282306
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 153,
+          "employment": 4205,
+          "annual_payroll_1000s": 246004
+        },
+        {
+          "state_fips": "08",
+          "state_name": "Colorado",
+          "establishments": 160,
+          "employment": 3308,
+          "annual_payroll_1000s": 319201
+        },
+        {
+          "state_fips": "29",
+          "state_name": "Missouri",
+          "establishments": 110,
+          "employment": 3122,
+          "annual_payroll_1000s": 264761
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 183,
+          "employment": 3050,
+          "annual_payroll_1000s": 259254
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 219,
+          "employment": 2824,
+          "annual_payroll_1000s": 192570
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 122,
+          "employment": 2800,
+          "annual_payroll_1000s": 156684
+        }
+      ],
+      "trend": []
+    },
+    "4246": {
+      "name": "Chemical & Allied Products",
+      "national": {
+        "establishments": 11720,
+        "employment": 162955,
+        "annual_payroll_1000s": 15209089
+      },
+      "top_states": [
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 1363,
+          "employment": 22323,
+          "annual_payroll_1000s": 2379193
+        },
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 1196,
+          "employment": 15389,
+          "annual_payroll_1000s": 1383774
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 506,
+          "employment": 9484,
+          "annual_payroll_1000s": 843610
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 521,
+          "employment": 9163,
+          "annual_payroll_1000s": 913605
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 452,
+          "employment": 8564,
+          "annual_payroll_1000s": 844472
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 492,
+          "employment": 7143,
+          "annual_payroll_1000s": 760965
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 753,
+          "employment": 6663,
+          "annual_payroll_1000s": 511480
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 497,
+          "employment": 5966,
+          "annual_payroll_1000s": 656095
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 408,
+          "employment": 5918,
+          "annual_payroll_1000s": 545990
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 376,
+          "employment": 5483,
+          "annual_payroll_1000s": 448364
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 379,
+          "employment": 5458,
+          "annual_payroll_1000s": 440234
+        },
+        {
+          "state_fips": "49",
+          "state_name": "Utah",
+          "establishments": 112,
+          "employment": 4288,
+          "annual_payroll_1000s": 244027
+        },
+        {
+          "state_fips": "27",
+          "state_name": "Minnesota",
+          "establishments": 194,
+          "employment": 3881,
+          "annual_payroll_1000s": 520994
+        },
+        {
+          "state_fips": "29",
+          "state_name": "Missouri",
+          "establishments": 235,
+          "employment": 3808,
+          "annual_payroll_1000s": 346390
+        },
+        {
+          "state_fips": "18",
+          "state_name": "Indiana",
+          "establishments": 276,
+          "employment": 3593,
+          "annual_payroll_1000s": 302581
+        }
+      ],
+      "trend": []
+    },
+    "4248": {
+      "name": "Beer, Wine & Distilled Alcoholic Beverage",
+      "national": {
+        "establishments": 4814,
+        "employment": 210737,
+        "annual_payroll_1000s": 15858501
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 763,
+          "employment": 23231,
+          "annual_payroll_1000s": 1992230
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 328,
+          "employment": 20481,
+          "annual_payroll_1000s": 1368378
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 334,
+          "employment": 16610,
+          "annual_payroll_1000s": 1385447
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 417,
+          "employment": 15295,
+          "annual_payroll_1000s": 1750705
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 168,
+          "employment": 8576,
+          "annual_payroll_1000s": 838474
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 109,
+          "employment": 6985,
+          "annual_payroll_1000s": 489147
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 130,
+          "employment": 6135,
+          "annual_payroll_1000s": 334454
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 107,
+          "employment": 5823,
+          "annual_payroll_1000s": 374445
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 101,
+          "employment": 5652,
+          "annual_payroll_1000s": 325638
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 120,
+          "employment": 5562,
+          "annual_payroll_1000s": 546492
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 118,
+          "employment": 5185,
+          "annual_payroll_1000s": 337290
+        },
+        {
+          "state_fips": "55",
+          "state_name": "Wisconsin",
+          "establishments": 88,
+          "employment": 4958,
+          "annual_payroll_1000s": 291937
+        },
+        {
+          "state_fips": "51",
+          "state_name": "Virginia",
+          "establishments": 119,
+          "employment": 4837,
+          "annual_payroll_1000s": 296402
+        },
+        {
+          "state_fips": "08",
+          "state_name": "Colorado",
+          "establishments": 115,
+          "employment": 4663,
+          "annual_payroll_1000s": 308857
+        },
+        {
+          "state_fips": "25",
+          "state_name": "Massachusetts",
+          "establishments": 109,
+          "employment": 4439,
+          "annual_payroll_1000s": 386961
+        }
+      ],
+      "trend": []
+    },
+    "4249": {
+      "name": "Miscellaneous Nondurable Goods",
+      "national": {
+        "establishments": 28321,
+        "employment": 333191,
+        "annual_payroll_1000s": 22090733
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 4342,
+          "employment": 47214,
+          "annual_payroll_1000s": 3444921
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 2517,
+          "employment": 23724,
+          "annual_payroll_1000s": 1454712
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 1388,
+          "employment": 20431,
+          "annual_payroll_1000s": 1370725
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 1954,
+          "employment": 19055,
+          "annual_payroll_1000s": 1139202
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 737,
+          "employment": 13613,
+          "annual_payroll_1000s": 1155318
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 835,
+          "employment": 12089,
+          "annual_payroll_1000s": 716216
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 742,
+          "employment": 11849,
+          "annual_payroll_1000s": 766519
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 1740,
+          "employment": 11447,
+          "annual_payroll_1000s": 767184
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 862,
+          "employment": 11036,
+          "annual_payroll_1000s": 815002
+        },
+        {
+          "state_fips": "19",
+          "state_name": "Iowa",
+          "establishments": 724,
+          "employment": 9698,
+          "annual_payroll_1000s": 684466
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 750,
+          "employment": 9540,
+          "annual_payroll_1000s": 597899
+        },
+        {
+          "state_fips": "27",
+          "state_name": "Minnesota",
+          "establishments": 629,
+          "employment": 9069,
+          "annual_payroll_1000s": 672034
+        },
+        {
+          "state_fips": "53",
+          "state_name": "Washington",
+          "establishments": 672,
+          "employment": 8987,
+          "annual_payroll_1000s": 575694
+        },
+        {
+          "state_fips": "26",
+          "state_name": "Michigan",
+          "establishments": 660,
+          "employment": 8486,
+          "annual_payroll_1000s": 685553
+        },
+        {
+          "state_fips": "29",
+          "state_name": "Missouri",
+          "establishments": 587,
+          "employment": 8142,
+          "annual_payroll_1000s": 517462
+        }
+      ],
+      "trend": []
+    },
+    "493": {
+      "name": "Warehousing & Storage",
+      "national": {
+        "establishments": 19979,
+        "employment": 1295120,
+        "annual_payroll_1000s": 64935477
+      },
+      "top_states": [
+        {
+          "state_fips": "06",
+          "state_name": "California",
+          "establishments": 2648,
+          "employment": 183150,
+          "annual_payroll_1000s": 10141218
+        },
+        {
+          "state_fips": "48",
+          "state_name": "Texas",
+          "establishments": 1840,
+          "employment": 121419,
+          "annual_payroll_1000s": 5917549
+        },
+        {
+          "state_fips": "42",
+          "state_name": "Pennsylvania",
+          "establishments": 856,
+          "employment": 84991,
+          "annual_payroll_1000s": 4229136
+        },
+        {
+          "state_fips": "13",
+          "state_name": "Georgia",
+          "establishments": 962,
+          "employment": 73131,
+          "annual_payroll_1000s": 3721177
+        },
+        {
+          "state_fips": "39",
+          "state_name": "Ohio",
+          "establishments": 896,
+          "employment": 66785,
+          "annual_payroll_1000s": 3425598
+        },
+        {
+          "state_fips": "17",
+          "state_name": "Illinois",
+          "establishments": 885,
+          "employment": 64630,
+          "annual_payroll_1000s": 3468878
+        },
+        {
+          "state_fips": "12",
+          "state_name": "Florida",
+          "establishments": 984,
+          "employment": 59928,
+          "annual_payroll_1000s": 2634884
+        },
+        {
+          "state_fips": "34",
+          "state_name": "New Jersey",
+          "establishments": 912,
+          "employment": 49779,
+          "annual_payroll_1000s": 3060909
+        },
+        {
+          "state_fips": "18",
+          "state_name": "Indiana",
+          "establishments": 537,
+          "employment": 45013,
+          "annual_payroll_1000s": 2098548
+        },
+        {
+          "state_fips": "47",
+          "state_name": "Tennessee",
+          "establishments": 534,
+          "employment": 41950,
+          "annual_payroll_1000s": 1933640
+        },
+        {
+          "state_fips": "37",
+          "state_name": "North Carolina",
+          "establishments": 548,
+          "employment": 40809,
+          "annual_payroll_1000s": 1714498
+        },
+        {
+          "state_fips": "51",
+          "state_name": "Virginia",
+          "establishments": 401,
+          "employment": 28994,
+          "annual_payroll_1000s": 1274748
+        },
+        {
+          "state_fips": "21",
+          "state_name": "Kentucky",
+          "establishments": 306,
+          "employment": 28778,
+          "annual_payroll_1000s": 1265549
+        },
+        {
+          "state_fips": "36",
+          "state_name": "New York",
+          "establishments": 670,
+          "employment": 27371,
+          "annual_payroll_1000s": 1357584
+        },
+        {
+          "state_fips": "04",
+          "state_name": "Arizona",
+          "establishments": 364,
+          "employment": 26382,
+          "annual_payroll_1000s": 1301035
+        }
+      ],
+      "trend": [
+        {
+          "establishments": 16919,
+          "employment": 967386,
+          "annual_payroll_1000s": 43236782,
+          "year": 2018
+        },
+        {
+          "establishments": 17345,
+          "employment": 1021448,
+          "annual_payroll_1000s": 47822198,
+          "year": 2019
+        },
+        {
+          "establishments": 17477,
+          "employment": 1141365,
+          "annual_payroll_1000s": 52757599,
+          "year": 2020
+        },
+        {
+          "establishments": 18252,
+          "employment": 1198878,
+          "annual_payroll_1000s": 58465947,
+          "year": 2021
+        },
+        {
+          "establishments": 19979,
+          "employment": 1295120,
+          "annual_payroll_1000s": 64935477,
+          "year": 2022
+        }
+      ]
+    }
+  }
+}

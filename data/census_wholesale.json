@@ -1,0 +1,391 @@
+{
+  "source": "US Census Bureau - Monthly Wholesale Trade Survey",
+  "url": "https://census.gov/wholesale/",
+  "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
+  "fetched_at": "2026-03-03T11:32:08.332862Z",
+  "categories": {
+    "42": {
+      "name": "Total Wholesale Trade",
+      "data": {
+        "sales": [
+          {
+            "period": "2024-10",
+            "value": 674029.0
+          },
+          {
+            "period": "2024-11",
+            "value": 678572.0
+          },
+          {
+            "period": "2024-12",
+            "value": 686278.0
+          },
+          {
+            "period": "2025-01",
+            "value": 680213.0
+          },
+          {
+            "period": "2025-02",
+            "value": 693771.0
+          },
+          {
+            "period": "2025-03",
+            "value": 699137.0
+          },
+          {
+            "period": "2025-04",
+            "value": 699402.0
+          },
+          {
+            "period": "2025-05",
+            "value": 696650.0
+          },
+          {
+            "period": "2025-06",
+            "value": 701297.0
+          },
+          {
+            "period": "2025-07",
+            "value": 710559.0
+          },
+          {
+            "period": "2025-08",
+            "value": 709361.0
+          },
+          {
+            "period": "2025-09",
+            "value": 707774.0
+          },
+          {
+            "period": "2025-10",
+            "value": 704727.0
+          },
+          {
+            "period": "2025-11",
+            "value": 714732.0
+          },
+          {
+            "period": "2025-12",
+            "value": 722077.0
+          }
+        ],
+        "inventories": [
+          {
+            "period": "2024-10",
+            "value": 898061.0
+          },
+          {
+            "period": "2024-11",
+            "value": 898579.0
+          },
+          {
+            "period": "2024-12",
+            "value": 891703.0
+          },
+          {
+            "period": "2025-01",
+            "value": 899458.0
+          },
+          {
+            "period": "2025-02",
+            "value": 903934.0
+          },
+          {
+            "period": "2025-03",
+            "value": 907090.0
+          },
+          {
+            "period": "2025-04",
+            "value": 908309.0
+          },
+          {
+            "period": "2025-05",
+            "value": 905458.0
+          },
+          {
+            "period": "2025-06",
+            "value": 906960.0
+          },
+          {
+            "period": "2025-07",
+            "value": 908006.0
+          },
+          {
+            "period": "2025-08",
+            "value": 907383.0
+          },
+          {
+            "period": "2025-09",
+            "value": 911532.0
+          },
+          {
+            "period": "2025-10",
+            "value": 913477.0
+          },
+          {
+            "period": "2025-11",
+            "value": 915713.0
+          },
+          {
+            "period": "2025-12",
+            "value": 917966.0
+          }
+        ]
+      }
+    },
+    "4244": {
+      "name": "Grocery & Related Products",
+      "data": {
+        "sales": [
+          {
+            "period": "2024-10",
+            "value": 76070.0
+          },
+          {
+            "period": "2024-11",
+            "value": 77368.0
+          },
+          {
+            "period": "2024-12",
+            "value": 78423.0
+          },
+          {
+            "period": "2025-01",
+            "value": 76565.0
+          },
+          {
+            "period": "2025-02",
+            "value": 77115.0
+          },
+          {
+            "period": "2025-03",
+            "value": 77268.0
+          },
+          {
+            "period": "2025-04",
+            "value": 78325.0
+          },
+          {
+            "period": "2025-05",
+            "value": 78898.0
+          },
+          {
+            "period": "2025-06",
+            "value": 78572.0
+          },
+          {
+            "period": "2025-07",
+            "value": 79685.0
+          },
+          {
+            "period": "2025-08",
+            "value": 81131.0
+          },
+          {
+            "period": "2025-09",
+            "value": 80662.0
+          },
+          {
+            "period": "2025-10",
+            "value": 80338.0
+          },
+          {
+            "period": "2025-11",
+            "value": 79659.0
+          },
+          {
+            "period": "2025-12",
+            "value": 80066.0
+          }
+        ],
+        "inventories": [
+          {
+            "period": "2024-10",
+            "value": 53297.0
+          },
+          {
+            "period": "2024-11",
+            "value": 54462.0
+          },
+          {
+            "period": "2024-12",
+            "value": 54029.0
+          },
+          {
+            "period": "2025-01",
+            "value": 54490.0
+          },
+          {
+            "period": "2025-02",
+            "value": 55092.0
+          },
+          {
+            "period": "2025-03",
+            "value": 55499.0
+          },
+          {
+            "period": "2025-04",
+            "value": 56158.0
+          },
+          {
+            "period": "2025-05",
+            "value": 56183.0
+          },
+          {
+            "period": "2025-06",
+            "value": 56709.0
+          },
+          {
+            "period": "2025-07",
+            "value": 57856.0
+          },
+          {
+            "period": "2025-08",
+            "value": 58200.0
+          },
+          {
+            "period": "2025-09",
+            "value": 58609.0
+          },
+          {
+            "period": "2025-10",
+            "value": 58632.0
+          },
+          {
+            "period": "2025-11",
+            "value": 58611.0
+          },
+          {
+            "period": "2025-12",
+            "value": 57670.0
+          }
+        ]
+      }
+    },
+    "4243": {
+      "name": "Lumber & Construction Materials",
+      "data": {
+        "sales": [
+          {
+            "period": "2024-10",
+            "value": 13425.0
+          },
+          {
+            "period": "2024-11",
+            "value": 13302.0
+          },
+          {
+            "period": "2024-12",
+            "value": 13902.0
+          },
+          {
+            "period": "2025-01",
+            "value": 13777.0
+          },
+          {
+            "period": "2025-02",
+            "value": 13589.0
+          },
+          {
+            "period": "2025-03",
+            "value": 13477.0
+          },
+          {
+            "period": "2025-04",
+            "value": 13738.0
+          },
+          {
+            "period": "2025-05",
+            "value": 13999.0
+          },
+          {
+            "period": "2025-06",
+            "value": 14103.0
+          },
+          {
+            "period": "2025-07",
+            "value": 13885.0
+          },
+          {
+            "period": "2025-08",
+            "value": 13169.0
+          },
+          {
+            "period": "2025-09",
+            "value": 13907.0
+          },
+          {
+            "period": "2025-10",
+            "value": 13860.0
+          },
+          {
+            "period": "2025-11",
+            "value": 14783.0
+          },
+          {
+            "period": "2025-12",
+            "value": 14331.0
+          }
+        ],
+        "inventories": [
+          {
+            "period": "2024-10",
+            "value": 28231.0
+          },
+          {
+            "period": "2024-11",
+            "value": 28380.0
+          },
+          {
+            "period": "2024-12",
+            "value": 27916.0
+          },
+          {
+            "period": "2025-01",
+            "value": 28071.0
+          },
+          {
+            "period": "2025-02",
+            "value": 28034.0
+          },
+          {
+            "period": "2025-03",
+            "value": 28238.0
+          },
+          {
+            "period": "2025-04",
+            "value": 28495.0
+          },
+          {
+            "period": "2025-05",
+            "value": 28376.0
+          },
+          {
+            "period": "2025-06",
+            "value": 27703.0
+          },
+          {
+            "period": "2025-07",
+            "value": 28418.0
+          },
+          {
+            "period": "2025-08",
+            "value": 28493.0
+          },
+          {
+            "period": "2025-09",
+            "value": 28252.0
+          },
+          {
+            "period": "2025-10",
+            "value": 28158.0
+          },
+          {
+            "period": "2025-12",
+            "value": 28561.0
+          }
+        ]
+      }
+    }
+  }
+}

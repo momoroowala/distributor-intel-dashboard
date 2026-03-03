@@ -1,0 +1,18 @@
+{
+  "source": "Census Bureau Wholesale Trade",
+  "updated": "2026-03-03",
+  "data": [
+    { "period": "2025-12", "sales": 722077, "inventories": 917966, "ratio": 1.27 },
+    { "period": "2025-11", "sales": 714732, "inventories": 915713, "ratio": 1.28 },
+    { "period": "2025-10", "sales": 704727, "inventories": 913477, "ratio": 1.29 },
+    { "period": "2025-09", "sales": 707774, "inventories": 911532, "ratio": 1.28 },
+    { "period": "2025-08", "sales": 709361, "inventories": 907383, "ratio": 1.27 },
+    { "period": "2025-07", "sales": 710559, "inventories": 908006, "ratio": 1.27 },
+    { "period": "2025-06", "sales": 701297, "inventories": 906960, "ratio": 1.29 },
+    { "period": "2025-05", "sales": 696650, "inventories": 905458, "ratio": 1.29 },
+    { "period": "2025-04", "sales": 699402, "inventories": 908309, "ratio": 1.29 },
+    { "period": "2025-03", "sales": 699137, "inventories": 907090, "ratio": 1.29 },
+    { "period": "2025-02", "sales": 693771, "inventories": 903934, "ratio": 1.30 },
+    { "period": "2025-01", "sales": 680213, "inventories": 899458, "ratio": 1.32 }
+  ]
+}

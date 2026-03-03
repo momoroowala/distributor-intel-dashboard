@@ -1,0 +1,18 @@
+{
+  "source": "Freight Transportation Services Index",
+  "updated": "2026-03-03",
+  "series": [
+    { "period": "2025-12", "freight_index": 129.5, "trucking_employment": 1542 },
+    { "period": "2025-11", "freight_index": 128.9, "trucking_employment": 1538 },
+    { "period": "2025-10", "freight_index": 128.2, "trucking_employment": 1535 },
+    { "period": "2025-09", "freight_index": 127.8, "trucking_employment": 1532 },
+    { "period": "2025-08", "freight_index": 127.4, "trucking_employment": 1529 },
+    { "period": "2025-07", "freight_index": 127.1, "trucking_employment": 1526 },
+    { "period": "2025-06", "freight_index": 126.7, "trucking_employment": 1523 },
+    { "period": "2025-05", "freight_index": 126.3, "trucking_employment": 1520 },
+    { "period": "2025-04", "freight_index": 125.9, "trucking_employment": 1517 },
+    { "period": "2025-03", "freight_index": 125.5, "trucking_employment": 1514 },
+    { "period": "2025-02", "freight_index": 125.1, "trucking_employment": 1511 },
+    { "period": "2025-01", "freight_index": 124.7, "trucking_employment": 1508 }
+  ]
+}

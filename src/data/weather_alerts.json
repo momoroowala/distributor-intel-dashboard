@@ -1,0 +1,18 @@
+{
+  "source": "NOAA Weather Alerts",
+  "updated": "2026-03-03",
+  "alerts": [
+    {
+      "event": "Winter Storm Warning",
+      "severity": "Severe",
+      "headline": "Heavy snow and ice expected",
+      "areaDesc": "Northern Plains, Upper Midwest"
+    },
+    {
+      "event": "Flood Warning",
+      "severity": "Severe",
+      "headline": "River flooding ongoing",
+      "areaDesc": "Mississippi River Valley"
+    }
+  ]
+}

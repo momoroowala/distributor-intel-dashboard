@@ -1,0 +1,27 @@
+{
+  "source": "EIA Diesel Prices",
+  "updated": "2026-03-03",
+  "prices": [
+    { "region": "US", "period": "2025-12-01", "value": 4.752 },
+    { "region": "US", "period": "2025-11-01", "value": 4.721 },
+    { "region": "US", "period": "2025-10-01", "value": 4.684 },
+    { "region": "US", "period": "2025-09-01", "value": 4.651 },
+    { "region": "US", "period": "2025-08-01", "value": 4.612 },
+    { "region": "US", "period": "2025-07-01", "value": 4.583 },
+    { "region": "US", "period": "2025-06-01", "value": 4.531 },
+    { "region": "US", "period": "2025-05-01", "value": 4.482 },
+    { "region": "US", "period": "2025-04-01", "value": 4.421 },
+    { "region": "US", "period": "2025-03-01", "value": 4.351 },
+    { "region": "US", "period": "2025-02-01", "value": 4.308 },
+    { "region": "US", "period": "2025-01-01", "value": 4.275 },
+    { "region": "East Coast", "period": "2025-12-01", "value": 4.856 },
+    { "region": "New England", "period": "2025-12-01", "value": 4.952 },
+    { "region": "Central Atlantic", "period": "2025-12-01", "value": 4.921 },
+    { "region": "Lower Atlantic", "period": "2025-12-01", "value": 4.702 },
+    { "region": "Midwest", "period": "2025-12-01", "value": 4.689 },
+    { "region": "Gulf Coast", "period": "2025-12-01", "value": 4.512 },
+    { "region": "Rocky Mountain", "period": "2025-12-01", "value": 4.834 },
+    { "region": "West Coast", "period": "2025-12-01", "value": 5.112 },
+    { "region": "California", "period": "2025-12-01", "value": 5.325 }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "source": "BLS Current Employment Statistics",
+  "updated": "2026-03-03",
+  "industries": {
+    "42": {
+      "name": "Wholesale Trade",
+      "data": [
+        { "period": "2024-01", "value": 5987.3 },
+        { "period": "2024-02", "value": 5992.1 },
+        { "period": "2024-03", "value": 5998.5 },
+        { "period": "2024-04", "value": 6003.2 },
+        { "period": "2024-05", "value": 6009.8 },
+        { "period": "2024-06", "value": 6015.4 },
+        { "period": "2024-07", "value": 6021.7 },
+        { "period": "2024-08", "value": 6027.3 },
+        { "period": "2024-09", "value": 6033.1 },
+        { "period": "2024-10", "value": 6038.9 },
+        { "period": "2024-11", "value": 6044.5 },
+        { "period": "2024-12", "value": 6050.2 },
+        { "period": "2025-01", "value": 6055.8 },
+        { "period": "2025-02", "value": 6061.4 },
+        { "period": "2025-03", "value": 6067.1 },
+        { "period": "2025-04", "value": 6072.7 },
+        { "period": "2025-05", "value": 6078.3 },
+        { "period": "2025-06", "value": 6084.0 },
+        { "period": "2025-07", "value": 6089.6 },
+        { "period": "2025-08", "value": 6095.2 },
+        { "period": "2025-09", "value": 6100.8 },
+        { "period": "2025-10", "value": 6106.5 },
+        { "period": "2025-11", "value": 6112.1 },
+        { "period": "2025-12", "value": 6117.7 }
+      ]
+    }
+  }
+}

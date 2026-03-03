@@ -1,16 +1,71 @@
-# React + Vite
+# Distribution Market Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Free market intelligence for U.S. wholesale distributors. Live data from federal sources, updated daily.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**React Version:** https://momoroowala.github.io/distributor-intel-dashboard/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Market Overview** - Wholesale sales trends, PPI, diesel prices
+- **Food & Beverage** - Commodity prices, distributor metrics
+- **Regional Analysis** - State-level employment and establishment data
+- **Freight & Supply Chain** - Transportation costs, inventory ratios
+- **Trade & Tariffs** - Import data, regulatory updates
+- **Industry Deep Dive** - NAICS category breakdowns
 
-## Expanding the ESLint configuration
+## Data Sources
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All data from public U.S. federal agencies:
+- US Census Bureau (Wholesale Trade Survey, County Business Patterns)
+- Bureau of Labor Statistics (Employment, PPI)
+- Federal Reserve Economic Data (FRED)
+- US International Trade Commission
+
+## Auto-Updates
+
+Data refreshes daily at 9 AM UTC via GitHub Actions. No manual intervention needed.
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Update Data Manually
+
+```bash
+cd scripts
+cp config.example.py config.py
+# Add your API keys to config.py
+python update_all.py
+```
+
+Required API keys (free):
+- FRED API: https://fred.stlouisfed.org/docs/api/api_key.html
+- BLS API: https://www.bls.gov/developers/
+
+## Tech Stack
+
+- React 19 + Vite
+- Recharts for visualizations
+- Tailwind CSS v4
+- GitHub Actions for automation
+- GitHub Pages for hosting
+
+## License
+
+Dashboard code: Proprietary  
+Data: Public domain (U.S. federal sources)
+
+---
+
+Built by [Deepline Operations](https://deeplineops.com)

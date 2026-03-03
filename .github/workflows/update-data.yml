@@ -1,0 +1,55 @@
+name: Update Market Data
+
+on:
+  schedule:
+    # Run daily at 9 AM UTC (4 AM EST)
+    - cron: '0 9 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install requests
+          
+      - name: Create config file
+        run: |
+          cat > scripts/config.py << EOF
+          FRED_API_KEY = "${{ secrets.FRED_API_KEY }}"
+          BLS_API_KEY = "${{ secrets.BLS_API_KEY }}"
+          CENSUS_BASE_URL = "https://api.census.gov/data"
+          FRED_BASE_URL = "https://api.stlouisfed.org/fred"
+          BLS_BASE_URL = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+          import os
+          DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+          EOF
+          
+      - name: Run data update script
+        run: |
+          cd scripts
+          python update_all.py
+          
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code data/ || echo "changes=true" >> $GITHUB_OUTPUT
+          
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git commit -m "Update market data - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push

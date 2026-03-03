@@ -1,0 +1,41 @@
+{
+  "source": "FDA Enforcement Reports",
+  "updated": "2026-03-03",
+  "recalls": [
+    {
+      "report_date": "2026-02-28",
+      "product_description": "Frozen chicken nuggets",
+      "reason_for_recall": "Possible Listeria contamination",
+      "classification": "Class I",
+      "status": "Ongoing"
+    },
+    {
+      "report_date": "2026-02-25",
+      "product_description": "Organic spinach",
+      "reason_for_recall": "E. coli detected",
+      "classification": "Class I",
+      "status": "Ongoing"
+    },
+    {
+      "report_date": "2026-02-20",
+      "product_description": "Canned soup",
+      "reason_for_recall": "Undeclared allergen (milk)",
+      "classification": "Class II",
+      "status": "Ongoing"
+    },
+    {
+      "report_date": "2026-02-18",
+      "product_description": "Bakery bread",
+      "reason_for_recall": "Possible foreign material",
+      "classification": "Class II",
+      "status": "Completed"
+    },
+    {
+      "report_date": "2026-02-15",
+      "product_description": "Fruit juice",
+      "reason_for_recall": "Mislabeling",
+      "classification": "Class III",
+      "status": "Completed"
+    }
+  ]
+}

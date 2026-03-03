@@ -1,0 +1,2739 @@
+{
+  "source": "BLS CPI Food + USDA ERS Food Price Outlook",
+  "urls": [
+    "https://ers.usda.gov/data-products/food-price-outlook",
+    "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+  ],
+  "fetched_at": "2026-03-03T11:18:36.690657Z",
+  "bls_food_cpi": {
+    "CUSR0000SAF": {
+      "name": "Food at home",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 288.549,
+          "pct_change_12m": 6.7
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 291.342,
+          "pct_change_12m": 7.6
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 293.893,
+          "pct_change_12m": 8.5
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 296.568,
+          "pct_change_12m": 9.0
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 299.817,
+          "pct_change_12m": 9.8
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 302.774,
+          "pct_change_12m": 10.0
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 305.962,
+          "pct_change_12m": 10.5
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 308.475,
+          "pct_change_12m": 10.9
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 310.453,
+          "pct_change_12m": 10.7
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 312.594,
+          "pct_change_12m": 10.6
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 314.179,
+          "pct_change_12m": 10.3
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 315.367,
+          "pct_change_12m": 10.1
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 316.859,
+          "pct_change_12m": 9.8
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 318.025,
+          "pct_change_12m": 9.2
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 318.05,
+          "pct_change_12m": 8.2
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 318.755,
+          "pct_change_12m": 7.5
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 319.587,
+          "pct_change_12m": 6.6
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 319.942,
+          "pct_change_12m": 5.7
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 320.719,
+          "pct_change_12m": 4.8
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 321.524,
+          "pct_change_12m": 4.2
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 321.945,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 322.992,
+          "pct_change_12m": 3.3
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 323.41,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 323.891,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 324.873,
+          "pct_change_12m": 2.5
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 325.168,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 325.24,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 325.894,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 326.385,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 327.042,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 327.74,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 328.154,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 329.109,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 329.851,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 330.937,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 331.65,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 332.626,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 333.302,
+          "pct_change_12m": 2.5
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 334.527,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 334.68,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 335.571,
+          "pct_change_12m": 2.8
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 336.527,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 336.941,
+          "pct_change_12m": 2.8
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 338.39,
+          "pct_change_12m": 3.1
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 339.145,
+          "pct_change_12m": 3.0
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 339.478,
+          "pct_change_12m": 2.6
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 341.563,
+          "pct_change_12m": 3.0
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 342.194,
+          "pct_change_12m": 2.9
+        }
+      ]
+    },
+    "CUSR0000SAF11": {
+      "name": "Cereals & bakery",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 271.176,
+          "pct_change_12m": 7.4
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 274.728,
+          "pct_change_12m": 8.7
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 278.333,
+          "pct_change_12m": 10.0
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 281.593,
+          "pct_change_12m": 10.8
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 285.522,
+          "pct_change_12m": 12.0
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 288.568,
+          "pct_change_12m": 12.3
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 292.455,
+          "pct_change_12m": 13.1
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 294.884,
+          "pct_change_12m": 13.6
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 296.403,
+          "pct_change_12m": 12.9
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 297.966,
+          "pct_change_12m": 12.4
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 299.449,
+          "pct_change_12m": 12.0
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 300.576,
+          "pct_change_12m": 11.7
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 301.676,
+          "pct_change_12m": 11.2
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 302.444,
+          "pct_change_12m": 10.1
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 301.467,
+          "pct_change_12m": 8.3
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 301.811,
+          "pct_change_12m": 7.2
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 302.184,
+          "pct_change_12m": 5.8
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 302.057,
+          "pct_change_12m": 4.7
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 302.984,
+          "pct_change_12m": 3.6
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 303.631,
+          "pct_change_12m": 3.0
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 303.449,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 304.366,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 304.332,
+          "pct_change_12m": 1.6
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 304.505,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 305.187,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 305.432,
+          "pct_change_12m": 1.0
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 305.01,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 305.354,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 305.414,
+          "pct_change_12m": 1.1
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 305.582,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 306.285,
+          "pct_change_12m": 1.1
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 306.399,
+          "pct_change_12m": 0.9
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 307.258,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 307.867,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 309.093,
+          "pct_change_12m": 1.6
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 309.767,
+          "pct_change_12m": 1.7
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 310.817,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 310.955,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 312.154,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 311.44,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 312.296,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 312.982,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 313.035,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 314.647,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 315.54,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 315.0,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 316.982,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 317.589,
+          "pct_change_12m": 2.2
+        }
+      ]
+    },
+    "CUSR0000SAF112": {
+      "name": "Meats, poultry, fish, eggs",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 300.107,
+          "pct_change_12m": 12.2
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 303.153,
+          "pct_change_12m": 13.0
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 305.837,
+          "pct_change_12m": 13.7
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 309.99,
+          "pct_change_12m": 14.4
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 314.828,
+          "pct_change_12m": 14.3
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 316.191,
+          "pct_change_12m": 11.9
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 316.838,
+          "pct_change_12m": 11.0
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 317.89,
+          "pct_change_12m": 10.8
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 318.1,
+          "pct_change_12m": 8.9
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 319.93,
+          "pct_change_12m": 8.0
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 320.408,
+          "pct_change_12m": 6.7
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 321.449,
+          "pct_change_12m": 7.5
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 323.734,
+          "pct_change_12m": 7.9
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 322.854,
+          "pct_change_12m": 6.5
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 318.387,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 318.48,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 316.12,
+          "pct_change_12m": 0.4
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 316.041,
+          "pct_change_12m": 0.0
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 316.471,
+          "pct_change_12m": -0.1
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 317.968,
+          "pct_change_12m": 0.0
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 318.428,
+          "pct_change_12m": 0.1
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 320.959,
+          "pct_change_12m": 0.3
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 320.45,
+          "pct_change_12m": 0.0
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 321.07,
+          "pct_change_12m": -0.1
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 321.074,
+          "pct_change_12m": -0.8
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 321.414,
+          "pct_change_12m": -0.4
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 322.791,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 322.168,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 323.771,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 324.838,
+          "pct_change_12m": 2.8
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 326.402,
+          "pct_change_12m": 3.1
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 328.364,
+          "pct_change_12m": 3.3
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 330.746,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 327.321,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 332.666,
+          "pct_change_12m": 3.8
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 334.228,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 339.696,
+          "pct_change_12m": 5.8
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 344.58,
+          "pct_change_12m": 7.2
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 346.865,
+          "pct_change_12m": 7.5
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 344.155,
+          "pct_change_12m": 6.8
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 343.575,
+          "pct_change_12m": 6.1
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 343.867,
+          "pct_change_12m": 5.9
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 344.077,
+          "pct_change_12m": 5.4
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 346.852,
+          "pct_change_12m": 5.6
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 347.793,
+          "pct_change_12m": 5.2
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 348.204,
+          "pct_change_12m": 4.7
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 347.431,
+          "pct_change_12m": 4.0
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 348.21,
+          "pct_change_12m": 2.5
+        }
+      ]
+    },
+    "CUSR0000SAF113": {
+      "name": "Dairy & related",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 326.04,
+          "pct_change_12m": 5.7
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 332.275,
+          "pct_change_12m": 7.6
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 337.155,
+          "pct_change_12m": 8.5
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 338.282,
+          "pct_change_12m": 7.9
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 339.458,
+          "pct_change_12m": 8.3
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 340.89,
+          "pct_change_12m": 8.1
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 342.666,
+          "pct_change_12m": 9.3
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 344.756,
+          "pct_change_12m": 9.5
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 348.646,
+          "pct_change_12m": 10.2
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 348.022,
+          "pct_change_12m": 9.3
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 350.525,
+          "pct_change_12m": 9.6
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 350.927,
+          "pct_change_12m": 8.4
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 349.296,
+          "pct_change_12m": 7.1
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 349.822,
+          "pct_change_12m": 5.3
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 345.61,
+          "pct_change_12m": 2.5
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 345.871,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 349.35,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 351.203,
+          "pct_change_12m": 3.0
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 352.478,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 352.002,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 350.978,
+          "pct_change_12m": 0.7
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 351.778,
+          "pct_change_12m": 1.1
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 351.38,
+          "pct_change_12m": 0.2
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 351.908,
+          "pct_change_12m": 0.3
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 352.577,
+          "pct_change_12m": 0.9
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 352.442,
+          "pct_change_12m": 0.7
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 352.948,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 352.633,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 352.057,
+          "pct_change_12m": 0.8
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 349.606,
+          "pct_change_12m": -0.5
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 351.848,
+          "pct_change_12m": -0.2
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 351.129,
+          "pct_change_12m": -0.2
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 353.238,
+          "pct_change_12m": 0.6
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 354.859,
+          "pct_change_12m": 0.9
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 354.924,
+          "pct_change_12m": 1.0
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 354.876,
+          "pct_change_12m": 0.8
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 352.833,
+          "pct_change_12m": 0.1
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 351.548,
+          "pct_change_12m": -0.3
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 350.88,
+          "pct_change_12m": -0.6
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 350.184,
+          "pct_change_12m": -0.7
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 350.966,
+          "pct_change_12m": -0.3
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 352.712,
+          "pct_change_12m": 0.9
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 353.041,
+          "pct_change_12m": 0.3
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 357.715,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 357.671,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 354.497,
+          "pct_change_12m": -0.1
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 355.876,
+          "pct_change_12m": 0.3
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 356.102,
+          "pct_change_12m": 0.9
+        }
+      ]
+    },
+    "CUSR0000SAF114": {
+      "name": "Fruits & vegetables",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 187.897,
+          "pct_change_12m": 5.0
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 190.961,
+          "pct_change_12m": 6.7
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 193.036,
+          "pct_change_12m": 8.0
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 196.409,
+          "pct_change_12m": 9.8
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 199.406,
+          "pct_change_12m": 12.0
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 201.013,
+          "pct_change_12m": 11.9
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 205.496,
+          "pct_change_12m": 13.7
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 206.788,
+          "pct_change_12m": 13.4
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 208.348,
+          "pct_change_12m": 12.9
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 209.967,
+          "pct_change_12m": 12.8
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 211.416,
+          "pct_change_12m": 13.1
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 212.151,
+          "pct_change_12m": 12.7
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 212.359,
+          "pct_change_12m": 13.0
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 214.533,
+          "pct_change_12m": 12.3
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 214.874,
+          "pct_change_12m": 11.3
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 214.91,
+          "pct_change_12m": 9.4
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 216.638,
+          "pct_change_12m": 8.6
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 216.295,
+          "pct_change_12m": 7.6
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 216.554,
+          "pct_change_12m": 5.4
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 216.842,
+          "pct_change_12m": 4.9
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 216.856,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 217.035,
+          "pct_change_12m": 3.4
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 217.492,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 217.838,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 219.43,
+          "pct_change_12m": 3.3
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 219.446,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 219.839,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 219.668,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 219.471,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 219.515,
+          "pct_change_12m": 1.5
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 220.63,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 219.74,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 219.699,
+          "pct_change_12m": 1.3
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 221.002,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 223.616,
+          "pct_change_12m": 2.8
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 222.827,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 224.221,
+          "pct_change_12m": 2.2
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 223.891,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 225.071,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 226.563,
+          "pct_change_12m": 3.1
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 226.368,
+          "pct_change_12m": 3.1
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 229.231,
+          "pct_change_12m": 4.4
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 228.528,
+          "pct_change_12m": 3.6
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 229.92,
+          "pct_change_12m": 4.6
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 231.494,
+          "pct_change_12m": 5.4
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 233.179,
+          "pct_change_12m": 4.3
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 234.18,
+          "pct_change_12m": 5.1
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 234.414,
+          "pct_change_12m": 4.5
+        }
+      ]
+    },
+    "CUSR0000SAF115": {
+      "name": "Nonalcoholic beverages",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 235.147,
+          "pct_change_12m": 7.4
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 237.609,
+          "pct_change_12m": 8.3
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 241.518,
+          "pct_change_12m": 10.3
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 243.579,
+          "pct_change_12m": 11.0
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 246.945,
+          "pct_change_12m": 12.6
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 251.006,
+          "pct_change_12m": 14.4
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 256.205,
+          "pct_change_12m": 15.8
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 259.566,
+          "pct_change_12m": 16.6
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 260.254,
+          "pct_change_12m": 15.7
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 262.426,
+          "pct_change_12m": 15.4
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 262.891,
+          "pct_change_12m": 14.0
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 264.722,
+          "pct_change_12m": 14.0
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 265.903,
+          "pct_change_12m": 13.1
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 267.2,
+          "pct_change_12m": 12.5
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 268.229,
+          "pct_change_12m": 11.1
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 268.958,
+          "pct_change_12m": 10.4
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 269.588,
+          "pct_change_12m": 9.2
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 268.761,
+          "pct_change_12m": 7.1
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 270.129,
+          "pct_change_12m": 5.4
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 271.232,
+          "pct_change_12m": 4.5
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 271.238,
+          "pct_change_12m": 4.2
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 271.937,
+          "pct_change_12m": 3.6
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 271.815,
+          "pct_change_12m": 3.4
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 271.974,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 272.596,
+          "pct_change_12m": 2.5
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 273.361,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 271.986,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 272.615,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 272.267,
+          "pct_change_12m": 1.0
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 272.918,
+          "pct_change_12m": 1.5
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 272.568,
+          "pct_change_12m": 0.9
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 272.231,
+          "pct_change_12m": 0.4
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 272.32,
+          "pct_change_12m": 0.4
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 273.134,
+          "pct_change_12m": 0.4
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 273.78,
+          "pct_change_12m": 0.7
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 274.112,
+          "pct_change_12m": 0.8
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 274.678,
+          "pct_change_12m": 0.8
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 273.624,
+          "pct_change_12m": 0.1
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 274.832,
+          "pct_change_12m": 1.0
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 274.517,
+          "pct_change_12m": 0.7
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 275.954,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 276.225,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 275.973,
+          "pct_change_12m": 1.2
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 276.305,
+          "pct_change_12m": 1.5
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 277.426,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 277.558,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 281.544,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 280.566,
+          "pct_change_12m": 2.1
+        }
+      ]
+    },
+    "CUSR0000SAF116": {
+      "name": "Other food at home",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 266.749,
+          "pct_change_12m": 2.7
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 269.128,
+          "pct_change_12m": 3.5
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 270.352,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 271.376,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 272.293,
+          "pct_change_12m": 4.0
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 273.537,
+          "pct_change_12m": 4.0
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 274.344,
+          "pct_change_12m": 4.2
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 275.627,
+          "pct_change_12m": 4.3
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 275.81,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 278.009,
+          "pct_change_12m": 5.0
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 279.629,
+          "pct_change_12m": 5.5
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 280.755,
+          "pct_change_12m": 5.8
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 282.286,
+          "pct_change_12m": 5.8
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 282.377,
+          "pct_change_12m": 4.9
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 282.588,
+          "pct_change_12m": 4.5
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 283.961,
+          "pct_change_12m": 4.6
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 285.285,
+          "pct_change_12m": 4.8
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 285.633,
+          "pct_change_12m": 4.4
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 285.58,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 285.859,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 287.496,
+          "pct_change_12m": 4.2
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 288.303,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 287.731,
+          "pct_change_12m": 2.9
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 287.873,
+          "pct_change_12m": 2.5
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 288.758,
+          "pct_change_12m": 2.3
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 289.22,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 289.36,
+          "pct_change_12m": 2.4
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 289.717,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 290.094,
+          "pct_change_12m": 1.7
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 290.825,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 291.088,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 291.432,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 291.683,
+          "pct_change_12m": 1.5
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 292.871,
+          "pct_change_12m": 1.6
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 292.831,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 291.832,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 292.771,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 294.211,
+          "pct_change_12m": 1.7
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 294.847,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 294.88,
+          "pct_change_12m": 1.8
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 294.478,
+          "pct_change_12m": 1.5
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 294.883,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 295.176,
+          "pct_change_12m": 1.4
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 296.908,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 297.507,
+          "pct_change_12m": 2.0
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 298.31,
+          "pct_change_12m": 1.9
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 298.085,
+          "pct_change_12m": 2.1
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 298.623,
+          "pct_change_12m": 2.0
+        }
+      ]
+    },
+    "CUSR0000SEFV": {
+      "name": "Food away from home",
+      "data": [
+        {
+          "year": 2022,
+          "month": 1,
+          "period": "2022-01",
+          "value": 319.471,
+          "pct_change_12m": 6.4
+        },
+        {
+          "year": 2022,
+          "month": 2,
+          "period": "2022-02",
+          "value": 320.88,
+          "pct_change_12m": 6.8
+        },
+        {
+          "year": 2022,
+          "month": 3,
+          "period": "2022-03",
+          "value": 321.689,
+          "pct_change_12m": 6.9
+        },
+        {
+          "year": 2022,
+          "month": 4,
+          "period": "2022-04",
+          "value": 323.559,
+          "pct_change_12m": 7.2
+        },
+        {
+          "year": 2022,
+          "month": 5,
+          "period": "2022-05",
+          "value": 325.952,
+          "pct_change_12m": 7.4
+        },
+        {
+          "year": 2022,
+          "month": 6,
+          "period": "2022-06",
+          "value": 329.033,
+          "pct_change_12m": 7.7
+        },
+        {
+          "year": 2022,
+          "month": 7,
+          "period": "2022-07",
+          "value": 331.342,
+          "pct_change_12m": 7.6
+        },
+        {
+          "year": 2022,
+          "month": 8,
+          "period": "2022-08",
+          "value": 334.212,
+          "pct_change_12m": 8.0
+        },
+        {
+          "year": 2022,
+          "month": 9,
+          "period": "2022-09",
+          "value": 337.369,
+          "pct_change_12m": 8.5
+        },
+        {
+          "year": 2022,
+          "month": 10,
+          "period": "2022-10",
+          "value": 340.532,
+          "pct_change_12m": 8.6
+        },
+        {
+          "year": 2022,
+          "month": 11,
+          "period": "2022-11",
+          "value": 342.266,
+          "pct_change_12m": 8.5
+        },
+        {
+          "year": 2022,
+          "month": 12,
+          "period": "2022-12",
+          "value": 343.559,
+          "pct_change_12m": 8.3
+        },
+        {
+          "year": 2023,
+          "month": 1,
+          "period": "2023-01",
+          "value": 345.677,
+          "pct_change_12m": 8.2
+        },
+        {
+          "year": 2023,
+          "month": 2,
+          "period": "2023-02",
+          "value": 347.869,
+          "pct_change_12m": 8.4
+        },
+        {
+          "year": 2023,
+          "month": 3,
+          "period": "2023-03",
+          "value": 349.944,
+          "pct_change_12m": 8.8
+        },
+        {
+          "year": 2023,
+          "month": 4,
+          "period": "2023-04",
+          "value": 351.237,
+          "pct_change_12m": 8.6
+        },
+        {
+          "year": 2023,
+          "month": 5,
+          "period": "2023-05",
+          "value": 352.892,
+          "pct_change_12m": 8.3
+        },
+        {
+          "year": 2023,
+          "month": 6,
+          "period": "2023-06",
+          "value": 354.245,
+          "pct_change_12m": 7.7
+        },
+        {
+          "year": 2023,
+          "month": 7,
+          "period": "2023-07",
+          "value": 354.862,
+          "pct_change_12m": 7.1
+        },
+        {
+          "year": 2023,
+          "month": 8,
+          "period": "2023-08",
+          "value": 356.083,
+          "pct_change_12m": 6.5
+        },
+        {
+          "year": 2023,
+          "month": 9,
+          "period": "2023-09",
+          "value": 357.488,
+          "pct_change_12m": 6.0
+        },
+        {
+          "year": 2023,
+          "month": 10,
+          "period": "2023-10",
+          "value": 358.824,
+          "pct_change_12m": 5.4
+        },
+        {
+          "year": 2023,
+          "month": 11,
+          "period": "2023-11",
+          "value": 360.383,
+          "pct_change_12m": 5.3
+        },
+        {
+          "year": 2023,
+          "month": 12,
+          "period": "2023-12",
+          "value": 361.564,
+          "pct_change_12m": 5.2
+        },
+        {
+          "year": 2024,
+          "month": 1,
+          "period": "2024-01",
+          "value": 363.249,
+          "pct_change_12m": 5.1
+        },
+        {
+          "year": 2024,
+          "month": 2,
+          "period": "2024-02",
+          "value": 363.596,
+          "pct_change_12m": 4.5
+        },
+        {
+          "year": 2024,
+          "month": 3,
+          "period": "2024-03",
+          "value": 364.546,
+          "pct_change_12m": 4.2
+        },
+        {
+          "year": 2024,
+          "month": 4,
+          "period": "2024-04",
+          "value": 365.813,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2024,
+          "month": 5,
+          "period": "2024-05",
+          "value": 367.099,
+          "pct_change_12m": 4.0
+        },
+        {
+          "year": 2024,
+          "month": 6,
+          "period": "2024-06",
+          "value": 368.616,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2024,
+          "month": 7,
+          "period": "2024-07",
+          "value": 369.383,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2024,
+          "month": 8,
+          "period": "2024-08",
+          "value": 370.348,
+          "pct_change_12m": 4.0
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "period": "2024-09",
+          "value": 371.604,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "period": "2024-10",
+          "value": 372.486,
+          "pct_change_12m": 3.8
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "period": "2024-11",
+          "value": 373.53,
+          "pct_change_12m": 3.6
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "period": "2024-12",
+          "value": 374.644,
+          "pct_change_12m": 3.6
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "period": "2025-01",
+          "value": 375.532,
+          "pct_change_12m": 3.4
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "period": "2025-02",
+          "value": 376.991,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "period": "2025-03",
+          "value": 378.363,
+          "pct_change_12m": 3.8
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "period": "2025-04",
+          "value": 380.039,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "period": "2025-05",
+          "value": 381.228,
+          "pct_change_12m": 3.8
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "period": "2025-06",
+          "value": 382.75,
+          "pct_change_12m": 3.8
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "period": "2025-07",
+          "value": 383.808,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "period": "2025-08",
+          "value": 384.909,
+          "pct_change_12m": 3.9
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "period": "2025-09",
+          "value": 385.451,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "period": "2025-11",
+          "value": 387.202,
+          "pct_change_12m": 3.7
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "period": "2025-12",
+          "value": 389.889,
+          "pct_change_12m": 4.1
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "period": "2026-01",
+          "value": 390.471,
+          "pct_change_12m": 4.0
+        }
+      ]
+    }
+  },
+  "usda_ers_available": false
+}

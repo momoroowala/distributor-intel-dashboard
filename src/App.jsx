@@ -1,96 +1,127 @@
-import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
-import { BarChart3, TrendingUp, Utensils, Phone } from 'lucide-react'
-import MarketOverview from './pages/MarketOverview'
-import FoodBeverage from './pages/FoodBeverage'
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { LayoutDashboard, Package, MapPin, Truck, Shield, Building2 } from 'lucide-react';
+import MarketOverview from './pages/MarketOverview';
+import FoodBeverage from './pages/FoodBeverage';
+import RegionalAnalysis from './pages/RegionalAnalysis';
+import FreightSupplyChain from './pages/FreightSupplyChain';
+import TradeTariffs from './pages/TradeTariffs';
+import IndustryDeepDive from './pages/IndustryDeepDive';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[#0f1117]">
-        {/* Header */}
-        <header className="border-b border-[#2a2d3e] bg-[#0f1117]/95 backdrop-blur sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-[#7c4dff] flex items-center justify-center">
-                  <BarChart3 className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h1 className="text-lg font-bold text-white">Distribution Market Intel</h1>
-                  <p className="text-xs text-[#9ca3af]">by Deepline Operations</p>
-                </div>
+      <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
+        {/* Sidebar */}
+        <aside className="w-full md:w-64 md:min-w-[256px] flex-shrink-0 bg-indigo-950 text-white">
+          <div className="p-6 border-b border-indigo-900/50">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 bg-indigo-500 rounded-lg flex items-center justify-center font-bold text-sm">
+                DL
               </div>
-              <nav className="flex items-center gap-1">
-                <NavLink
-                  to="/"
-                  end
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-[#7c4dff]/20 text-[#b388ff]'
-                        : 'text-[#9ca3af] hover:text-white hover:bg-[#1a1d2e]'
-                    }`
-                  }
-                >
-                  <span className="flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4" />
-                    <span className="hidden sm:inline">Overview</span>
-                  </span>
-                </NavLink>
-                <NavLink
-                  to="/food-beverage"
-                  className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-[#7c4dff]/20 text-[#b388ff]'
-                        : 'text-[#9ca3af] hover:text-white hover:bg-[#1a1d2e]'
-                    }`
-                  }
-                >
-                  <span className="flex items-center gap-2">
-                    <Utensils className="w-4 h-4" />
-                    <span className="hidden sm:inline">Food & Beverage</span>
-                  </span>
-                </NavLink>
-              </nav>
+              <div>
+                <div className="font-bold text-sm tracking-wide">Deepline Operations</div>
+                <div className="text-indigo-300 text-xs">Distribution Market Intelligence</div>
+              </div>
             </div>
           </div>
-        </header>
+
+          <nav className="p-3 flex md:block overflow-x-auto">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <LayoutDashboard className="w-5 h-5 flex-shrink-0" />
+              <span>Market Overview</span>
+            </NavLink>
+
+            <NavLink
+              to="/food-beverage"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <Package className="w-5 h-5 flex-shrink-0" />
+              <span>Food & Commodity Prices</span>
+            </NavLink>
+
+            <NavLink
+              to="/regional"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <MapPin className="w-5 h-5 flex-shrink-0" />
+              <span>Regional Analysis</span>
+            </NavLink>
+
+            <NavLink
+              to="/freight"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <Truck className="w-5 h-5 flex-shrink-0" />
+              <span>Freight & Supply Chain</span>
+            </NavLink>
+
+            <NavLink
+              to="/trade"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <Shield className="w-5 h-5 flex-shrink-0" />
+              <span>Trade & Tariffs</span>
+            </NavLink>
+
+            <NavLink
+              to="/industry"
+              className={({ isActive }) =>
+                `nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium cursor-pointer whitespace-nowrap ${
+                  isActive ? 'bg-indigo-600' : 'text-indigo-200 hover:bg-indigo-900/30'
+                }`
+              }
+            >
+              <Building2 className="w-5 h-5 flex-shrink-0" />
+              <span>Industry Deep Dive</span>
+            </NavLink>
+          </nav>
+
+          <div className="hidden md:block mt-auto p-4 border-t border-indigo-900/50">
+            <div className="text-xs text-indigo-400">
+              Last updated: {new Date().toLocaleDateString()}
+            </div>
+          </div>
+        </aside>
 
         {/* Main Content */}
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Routes>
-            <Route path="/" element={<MarketOverview />} />
-            <Route path="/food-beverage" element={<FoodBeverage />} />
-          </Routes>
-        </main>
-
-        {/* Footer */}
-        <footer className="border-t border-[#2a2d3e] mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="text-center sm:text-left">
-                <p className="text-[#9ca3af] text-sm">
-                  Built by <span className="text-[#b388ff] font-medium">Deepline Operations</span>
-                </p>
-                <p className="text-[#9ca3af]/60 text-xs mt-1">
-                  Data from US Census Bureau, BLS, FRED, Google Trends
-                </p>
-              </div>
-              <a
-                href="https://deeplineoperations.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#7c4dff] hover:text-[#b388ff] text-sm font-medium transition-colors"
-              >
-                deeplineoperations.com
-              </a>
-            </div>
+        <main className="flex-1 overflow-y-auto">
+          <div className="max-w-7xl mx-auto p-4 md:p-8">
+            <Routes>
+              <Route path="/" element={<MarketOverview />} />
+              <Route path="/food-beverage" element={<FoodBeverage />} />
+              <Route path="/regional" element={<RegionalAnalysis />} />
+              <Route path="/freight" element={<FreightSupplyChain />} />
+              <Route path="/trade" element={<TradeTariffs />} />
+              <Route path="/industry" element={<IndustryDeepDive />} />
+            </Routes>
           </div>
-        </footer>
+        </main>
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

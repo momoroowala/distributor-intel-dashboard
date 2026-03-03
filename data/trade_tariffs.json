@@ -1,0 +1,111 @@
+{
+  "source": "USITC + Census International Trade",
+  "urls": [
+    "https://dataweb.usitc.gov",
+    "https://api.census.gov/data/timeseries/intltrade/"
+  ],
+  "fetched_at": "2026-03-03T11:02:49.042417Z",
+  "tariff_changes": [
+    {
+      "date": "2026-02-04",
+      "description": "Additional 10% tariff on Chinese imports (Executive Order)",
+      "affected_chapters": [
+        "39",
+        "73",
+        "84",
+        "85"
+      ],
+      "impact": "high",
+      "source": "Federal Register"
+    },
+    {
+      "date": "2026-03-04",
+      "description": "25% tariff on Canadian and Mexican imports (scheduled)",
+      "affected_chapters": [
+        "02",
+        "03",
+        "04",
+        "07",
+        "08",
+        "44"
+      ],
+      "impact": "high",
+      "source": "Executive Order"
+    }
+  ],
+  "import_volumes": {
+    "02": {
+      "name": "Meat & edible meat offal",
+      "records": [],
+      "record_count": 0
+    },
+    "03": {
+      "name": "Fish & crustaceans",
+      "records": [],
+      "record_count": 0
+    },
+    "04": {
+      "name": "Dairy, eggs, honey",
+      "records": [],
+      "record_count": 0
+    },
+    "07": {
+      "name": "Edible vegetables",
+      "records": [],
+      "record_count": 0
+    },
+    "08": {
+      "name": "Edible fruit & nuts",
+      "records": [],
+      "record_count": 0
+    },
+    "09": {
+      "name": "Coffee, tea, spices",
+      "records": [],
+      "record_count": 0
+    },
+    "20": {
+      "name": "Preserved vegetables & fruit",
+      "records": [],
+      "record_count": 0
+    },
+    "22": {
+      "name": "Beverages",
+      "records": [],
+      "record_count": 0
+    },
+    "48": {
+      "name": "Paper & paperboard",
+      "records": [],
+      "record_count": 0
+    },
+    "39": {
+      "name": "Plastics",
+      "records": [],
+      "record_count": 0
+    }
+  },
+  "hts_chapters_tracked": {
+    "02": "Meat & edible meat offal",
+    "03": "Fish & crustaceans",
+    "04": "Dairy, eggs, honey",
+    "07": "Edible vegetables",
+    "08": "Edible fruit & nuts",
+    "09": "Coffee, tea, spices",
+    "15": "Fats & oils",
+    "16": "Prepared meat & fish",
+    "17": "Sugars & confectionery",
+    "18": "Cocoa & cocoa preparations",
+    "19": "Cereal preparations",
+    "20": "Preserved vegetables & fruit",
+    "21": "Miscellaneous edible preparations",
+    "22": "Beverages",
+    "34": "Soap, cleaning preparations",
+    "39": "Plastics",
+    "44": "Wood & wood articles",
+    "48": "Paper & paperboard",
+    "73": "Iron & steel articles",
+    "84": "Machinery & mechanical appliances",
+    "85": "Electrical machinery"
+  }
+}
