@@ -45,12 +45,12 @@ DISTRIBUTION_HTS_CHAPTERS = {
 def fetch_hts_chapter(chapter):
     """Fetch HTS tariff data for a chapter."""
     url = f"{HTS_API_BASE}/search"
-    
+
     try:
         # Search by chapter heading
         params = {"query": chapter}
         resp = requests.get(url, params=params, timeout=30)
-        
+
         if resp.status_code == 200:
             data = resp.json()
             return data
@@ -63,27 +63,21 @@ def fetch_hts_chapter(chapter):
 
 def fetch_recent_tariff_changes():
     """
-    Scrape/check for recent tariff modifications.
-    Uses the USITC modifications page.
+    Track verified tariff changes from official government sources.
+    Updates should be manually verified against Federal Register and USTR announcements.
     """
-    # USITC publishes tariff modifications — we'll track key ones
-    # For now, we'll build a static tracker that gets updated
+    # Only include confirmed tariff changes with official sources
+    # Remove or update these as policy changes occur
     
     known_changes = [
-        {
-            "date": "2026-02-04",
-            "description": "Additional 10% tariff on Chinese imports (Executive Order)",
-            "affected_chapters": ["39", "73", "84", "85"],
-            "impact": "high",
-            "source": "Federal Register",
-        },
-        {
-            "date": "2026-03-04",
-            "description": "25% tariff on Canadian and Mexican imports (scheduled)",
-            "affected_chapters": ["02", "03", "04", "07", "08", "44"],
-            "impact": "high",
-            "source": "Executive Order",
-        },
+        # Example format - update with real tariff changes as they happen:
+        # {
+        #     "date": "2025-XX-XX",
+        #     "description": "Tariff description from official source",
+        #     "affected_chapters": ["XX"],
+        #     "impact": "high/medium/low",
+        #     "source": "Federal Register / USTR / ITC",
+        # },
     ]
     
     return known_changes
@@ -95,16 +89,16 @@ def fetch_trade_data_census(hs_chapter="02", flow="imports"):
     More reliable than USITC DataWeb for programmatic access.
     """
     from config import CENSUS_BASE_URL
-    
+
     endpoint = f"{CENSUS_BASE_URL}/timeseries/intltrade/{flow}/hs"
-    
+
     params = {
         "get": "GEN_VAL_MO,CON_VAL_MO,I_COMMODITY",
         "COMM_LVL": "HS2",
         "I_COMMODITY": hs_chapter,
         "time": "from+2024-01",
     }
-    
+
     try:
         resp = requests.get(endpoint, params=params, timeout=30)
         if resp.status_code == 200:
@@ -124,16 +118,16 @@ def fetch_trade_data_census(hs_chapter="02", flow="imports"):
 
 def main():
     print("Fetching USITC / Trade data...")
-    
+
     # 1. Recent tariff changes
     tariff_changes = fetch_recent_tariff_changes()
     print(f"Tracked tariff changes: {len(tariff_changes)}")
-    
+
     # 2. Import volumes for key distribution commodities
     print("\nFetching import volumes from Census...")
     import_data = {}
     key_chapters = ["02", "03", "04", "07", "08", "09", "20", "22", "48", "39"]
-    
+
     for chapter in key_chapters:
         name = DISTRIBUTION_HTS_CHAPTERS.get(chapter, f"Chapter {chapter}")
         print(f"  {name} (HS {chapter})...")
@@ -143,7 +137,7 @@ def main():
             "records": records,
             "record_count": len(records),
         }
-    
+
     output = {
         "source": "USITC + Census International Trade",
         "urls": [
@@ -155,11 +149,11 @@ def main():
         "import_volumes": import_data,
         "hts_chapters_tracked": DISTRIBUTION_HTS_CHAPTERS,
     }
-    
+
     outpath = os.path.join(DATA_DIR, "trade_tariffs.json")
     with open(outpath, "w") as f:
         json.dump(output, f, indent=2)
-    
+
     print(f"\nSaved to {outpath}")
     return output
 

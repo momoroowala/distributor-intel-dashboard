@@ -39,6 +39,7 @@ jobs:
         run: |
           cd scripts
           python update_all.py
+          python validate_data.py
           
       - name: Check for changes
         id: git-check
