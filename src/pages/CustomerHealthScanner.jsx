@@ -8,7 +8,7 @@ import {
   Upload, Users, AlertTriangle, TrendingDown, DollarSign,
   ChevronDown, ChevronUp, Download, Star, Phone,
   Target, Sparkles, FileText, Search, Shield, Printer,
-  ArrowRight, BarChart3, Lock, HelpCircle
+  ArrowRight, BarChart3, Lock, HelpCircle, CheckCircle, AlertCircle, XCircle
 } from 'lucide-react'
 import CTASection from '../components/CTASection'
 
@@ -396,6 +396,50 @@ function AnimatedCounter({ value, prefix = '', suffix = '', duration = 2000 }) {
   )
 }
 
+// ── Column auto-detection ─────────────────────────────────────────────────────
+
+const COLUMN_MATCHERS = {
+  customerName: ['customer', 'name', 'client', 'account', 'company', 'bill to', 'ship to'],
+  orderDate: ['date', 'order date', 'invoice date', 'txn date', 'transaction date'],
+  orderAmount: ['amount', 'total', 'sum', 'revenue', 'sales', 'value', 'price', 'balance'],
+}
+
+function autoDetectColumns(headers) {
+  const mapping = { customerName: '', orderDate: '', orderAmount: '' }
+  const confidence = { customerName: 'none', orderDate: 'none', orderAmount: 'none' }
+
+  Object.entries(COLUMN_MATCHERS).forEach(([field, keywords]) => {
+    const lowerHeaders = headers.map(h => h.toLowerCase().trim())
+    // Try exact match first
+    for (const kw of keywords) {
+      const idx = lowerHeaders.findIndex(h => h === kw)
+      if (idx !== -1) {
+        mapping[field] = headers[idx]
+        confidence[field] = 'high'
+        return
+      }
+    }
+    // Try partial match
+    const matches = []
+    for (const kw of keywords) {
+      for (let i = 0; i < lowerHeaders.length; i++) {
+        if (lowerHeaders[i].includes(kw) && !matches.includes(headers[i])) {
+          matches.push(headers[i])
+        }
+      }
+    }
+    if (matches.length === 1) {
+      mapping[field] = matches[0]
+      confidence[field] = 'high'
+    } else if (matches.length > 1) {
+      mapping[field] = matches[0]
+      confidence[field] = 'medium'
+    }
+  })
+
+  return { mapping, confidence }
+}
+
 // ── Main component ─────────────────────────────────────────────────────────────
 
 export default function CustomerHealthScanner() {
@@ -407,6 +451,14 @@ export default function CustomerHealthScanner() {
   const [showQBInstructions, setShowQBInstructions] = useState(false)
   const fileInputRef = useRef(null)
 
+  // Column mapping state
+  const [showMapping, setShowMapping] = useState(false)
+  const [csvHeaders, setCsvHeaders] = useState([])
+  const [previewRows, setPreviewRows] = useState([])
+  const [columnMapping, setColumnMapping] = useState({ customerName: '', orderDate: '', orderAmount: '' })
+  const [mappingConfidence, setMappingConfidence] = useState({ customerName: 'none', orderDate: 'none', orderAmount: 'none' })
+  const [pendingFile, setPendingFile] = useState(null)
+
   const processData = useCallback((orders) => {
     const result = analyzeCustomers(orders)
     setAnalysis(result)
@@ -416,29 +468,60 @@ export default function CustomerHealthScanner() {
   }, [])
 
   const handleFile = useCallback((file) => {
+    setPendingFile(file)
     Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+      preview: 5,
+      complete: (results) => {
+        if (results.data && results.data.length > 0 && results.meta?.fields) {
+          const headers = results.meta.fields.filter(h => h.trim())
+          setCsvHeaders(headers)
+          setPreviewRows(results.data.slice(0, 3))
+          const { mapping, confidence } = autoDetectColumns(headers)
+          setColumnMapping(mapping)
+          setMappingConfidence(confidence)
+          setShowMapping(true)
+        }
+      }
+    })
+  }, [])
+
+  const confirmMapping = useCallback(() => {
+    if (!pendingFile || !columnMapping.customerName || !columnMapping.orderDate || !columnMapping.orderAmount) return
+    Papa.parse(pendingFile, {
       header: true,
       skipEmptyLines: true,
       complete: (results) => {
         if (results.data && results.data.length > 0) {
-          // Normalize column names
           const normalized = results.data.map(row => {
-            const out = {}
+            const out = { 'Customer Name': '', Date: '', Amount: '' }
+            out['Customer Name'] = row[columnMapping.customerName] || ''
+            out['Date'] = row[columnMapping.orderDate] || ''
+            out['Amount'] = row[columnMapping.orderAmount] || ''
+            // Try to find a category column
             Object.entries(row).forEach(([k, v]) => {
               const key = k.trim().toLowerCase()
-              if (key.includes('customer') || key.includes('name')) out['Customer Name'] = v
-              else if (key.includes('date')) out['Date'] = v
-              else if (key.includes('amount') || key.includes('total') || key.includes('value')) out['Amount'] = v
-              else if (key.includes('product') || key.includes('category')) out['Category'] = v
-              else out[k] = v
+              if (key.includes('product') || key.includes('category')) out['Category'] = v
             })
             return out
           }).filter(r => r['Customer Name'] && r['Date'] && r['Amount'])
+          setShowMapping(false)
+          setPendingFile(null)
           processData(normalized)
         }
       }
     })
-  }, [processData])
+  }, [pendingFile, columnMapping, processData])
+
+  const cancelMapping = useCallback(() => {
+    setShowMapping(false)
+    setPendingFile(null)
+    setCsvHeaders([])
+    setPreviewRows([])
+    setColumnMapping({ customerName: '', orderDate: '', orderAmount: '' })
+    setMappingConfidence({ customerName: 'none', orderDate: 'none', orderAmount: 'none' })
+  }, [])
 
   const handleDrop = useCallback((e) => {
     e.preventDefault()
@@ -499,6 +582,10 @@ export default function CustomerHealthScanner() {
     setExpandedRows(new Set())
     setSelectedSegment(null)
     setSearchTerm('')
+    setShowMapping(false)
+    setPendingFile(null)
+    setCsvHeaders([])
+    setPreviewRows([])
   }, [])
 
   // Filter customers by segment and search
@@ -524,6 +611,7 @@ export default function CustomerHealthScanner() {
         </div>
 
         {/* Upload zone */}
+        {!showMapping && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -561,8 +649,142 @@ export default function CustomerHealthScanner() {
             Product/Category column is optional. All processing happens in your browser — nothing is uploaded.
           </p>
         </motion.div>
+        )}
+
+        {/* ── Column Mapping Panel ─────────────────────────────────────────── */}
+        {showMapping && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-[#1a1d2e] rounded-2xl border border-[#2a2d3e] p-6 mb-6"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h3 className="text-white font-semibold text-base flex items-center gap-2">
+                  <FileText className="w-4 h-4 text-[#7c4dff]" />
+                  Map Your Columns
+                </h3>
+                <p className="text-[#9ca3af] text-xs mt-1">
+                  Tell us which columns contain the customer name, date, and amount.
+                </p>
+              </div>
+              <button
+                onClick={cancelMapping}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[#9ca3af] hover:text-white hover:bg-[#2a2d3e] transition-all text-sm"
+              >
+                <XCircle className="w-4 h-4" />
+                Cancel
+              </button>
+            </div>
+
+            {/* Dropdowns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+              {[
+                { key: 'customerName', label: 'Customer Name' },
+                { key: 'orderDate', label: 'Order Date' },
+                { key: 'orderAmount', label: 'Order Amount' },
+              ].map(({ key, label }) => (
+                <div key={key}>
+                  <label className="text-[#9ca3af] text-xs font-medium mb-1.5 flex items-center gap-1.5">
+                    {label}
+                    {mappingConfidence[key] === 'high' && <CheckCircle className="w-3.5 h-3.5 text-[#4caf50]" />}
+                    {mappingConfidence[key] === 'medium' && <AlertCircle className="w-3.5 h-3.5 text-[#f59e0b]" />}
+                    {mappingConfidence[key] === 'none' && <AlertCircle className="w-3.5 h-3.5 text-[#ef4444]" />}
+                  </label>
+                  <select
+                    value={columnMapping[key]}
+                    onChange={(e) => {
+                      setColumnMapping(prev => ({ ...prev, [key]: e.target.value }))
+                      setMappingConfidence(prev => ({ ...prev, [key]: e.target.value ? 'high' : 'none' }))
+                    }}
+                    className="w-full bg-[#0f1117] border border-[#2a2d3e] rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#7c4dff]/50 appearance-none cursor-pointer"
+                  >
+                    <option value="">— Select column —</option>
+                    {csvHeaders.map(h => (
+                      <option key={h} value={h}>{h}</option>
+                    ))}
+                  </select>
+                  {mappingConfidence[key] === 'medium' && (
+                    <p className="text-[#f59e0b] text-[10px] mt-1">Please verify this selection</p>
+                  )}
+                  {mappingConfidence[key] === 'none' && columnMapping[key] === '' && (
+                    <p className="text-[#ef4444] text-[10px] mt-1">Required — select a column</p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Data Preview */}
+            {previewRows.length > 0 && (
+              <div className="mb-5">
+                <p className="text-[#9ca3af] text-xs font-medium mb-2">Data Preview (first 3 rows)</p>
+                <div className="overflow-x-auto rounded-lg border border-[#2a2d3e]">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="bg-[#0f1117]">
+                        {csvHeaders.map(h => (
+                          <th
+                            key={h}
+                            className={`px-3 py-2 text-left font-medium whitespace-nowrap ${
+                              h === columnMapping.customerName || h === columnMapping.orderDate || h === columnMapping.orderAmount
+                                ? 'text-[#7c4dff] bg-[#7c4dff]/10'
+                                : 'text-[#9ca3af]'
+                            }`}
+                          >
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {previewRows.map((row, i) => (
+                        <tr key={i} className="border-t border-[#2a2d3e]">
+                          {csvHeaders.map(h => (
+                            <td
+                              key={h}
+                              className={`px-3 py-2 whitespace-nowrap ${
+                                h === columnMapping.customerName || h === columnMapping.orderDate || h === columnMapping.orderAmount
+                                  ? 'text-white bg-[#7c4dff]/5'
+                                  : 'text-[#9ca3af]'
+                              }`}
+                            >
+                              {row[h] || '—'}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* Confirm button */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={confirmMapping}
+                disabled={!columnMapping.customerName || !columnMapping.orderDate || !columnMapping.orderAmount}
+                className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all ${
+                  columnMapping.customerName && columnMapping.orderDate && columnMapping.orderAmount
+                    ? 'bg-[#7c4dff] hover:bg-[#5c3db8] text-white shadow-lg shadow-[#7c4dff]/20 hover:shadow-[#7c4dff]/40'
+                    : 'bg-[#2a2d3e] text-[#9ca3af] cursor-not-allowed'
+                }`}
+              >
+                <Target className="w-4 h-4" />
+                Confirm &amp; Analyze
+              </button>
+              <span className="text-[#9ca3af] text-xs">
+                {columnMapping.customerName && columnMapping.orderDate && columnMapping.orderAmount
+                  ? 'Ready to analyze!'
+                  : 'Map all 3 columns to continue'}
+              </span>
+            </div>
+          </motion.div>
+        )}
 
         {/* Sample data button */}
+        {!showMapping && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -580,8 +802,10 @@ export default function CustomerHealthScanner() {
             Try it out with realistic demo data before uploading your own
           </p>
         </motion.div>
+        )}
 
         {/* Trust badge */}
+        {!showMapping && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -595,8 +819,10 @@ export default function CustomerHealthScanner() {
             </span>
           </div>
         </motion.div>
+        )}
 
         {/* QuickBooks Export Instructions */}
+        {!showMapping && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -640,8 +866,11 @@ export default function CustomerHealthScanner() {
             )}
           </AnimatePresence>
         </motion.div>
+        )}
 
         {/* How it works */}
+        {!showMapping && (
+        <>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           {[
             { icon: FileText, title: 'Upload Order History', desc: 'CSV export from QuickBooks, your ERP, or a spreadsheet' },
@@ -663,6 +892,8 @@ export default function CustomerHealthScanner() {
         </div>
 
         <CTASection />
+        </>
+        )}
       </div>
     )
   }

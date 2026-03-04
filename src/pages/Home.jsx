@@ -118,13 +118,13 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mb-10"
+        className="mb-4"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 leading-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 leading-tight">
           Your Customers Are Leaving.<br />
           <span className="text-[#7c4dff]">We Show You Which Ones.</span>
         </h1>
-        <p className="text-[#9ca3af] text-base sm:text-lg max-w-2xl mb-6">
+        <p className="text-[#9ca3af] text-base sm:text-lg max-w-2xl mb-3">
           Upload your order history. In 60 seconds, see which accounts need attention Monday morning,
           how much revenue is at risk, and exactly who to call first.
         </p>
@@ -151,7 +151,7 @@ export default function Home() {
       </motion.div>
 
       {/* ── Alert Cards ───────────────────────────────────────────────── */}
-      <div className="mb-10">
+      <div className="mb-8">
         <h3 className="text-white font-semibold text-sm mb-3 flex items-center gap-2">
           <AlertTriangle className="w-4 h-4 text-[#f59e0b]" />
           This Week&apos;s Market Alerts
