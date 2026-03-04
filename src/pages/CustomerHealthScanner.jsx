@@ -7,7 +7,7 @@ import {
 import {
   Upload, Users, AlertTriangle, TrendingDown, DollarSign,
   ChevronDown, ChevronUp, Download, Star, Phone,
-  Target, Sparkles, FileText, Search
+  Target, Sparkles, FileText, Search, Shield, Printer
 } from 'lucide-react'
 import CTASection from '../components/CTASection'
 
@@ -579,8 +579,24 @@ export default function CustomerHealthScanner() {
           </p>
         </motion.div>
 
+        {/* Trust callout */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-8 bg-[#4caf50]/5 border border-[#4caf50]/20 rounded-xl p-5 flex items-center gap-4"
+        >
+          <div className="w-10 h-10 rounded-full bg-[#4caf50]/10 flex items-center justify-center flex-shrink-0">
+            <Shield className="w-5 h-5 text-[#4caf50]" />
+          </div>
+          <div>
+            <div className="text-white text-sm font-medium mb-0.5">100% browser-based. Your data never leaves your computer.</div>
+            <div className="text-[#9ca3af] text-xs">No servers, no uploads, no storage. All analysis runs locally in your browser. Close the tab and it's gone.</div>
+          </div>
+        </motion.div>
+
         {/* How it works */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           {[
             { icon: FileText, title: 'Upload Order History', desc: 'CSV export from QuickBooks, your ERP, or a spreadsheet' },
             { icon: Target, title: 'Instant RFM Analysis', desc: 'Recency, Frequency, Monetary scoring segments your customers' },
@@ -627,6 +643,13 @@ export default function CustomerHealthScanner() {
           >
             <Download className="w-4 h-4" />
             Export CSV
+          </button>
+          <button
+            onClick={() => window.print()}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#7c4dff]/10 border border-[#7c4dff]/30 text-[#7c4dff] hover:bg-[#7c4dff]/20 transition-all text-sm"
+          >
+            <Printer className="w-4 h-4" />
+            Print Report
           </button>
           <button
             onClick={resetScanner}
@@ -988,8 +1011,21 @@ export default function CustomerHealthScanner() {
         )}
       </motion.div>
 
+      {/* Product-level upsell */}
+      <div className="bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] p-6 mt-8 mb-4 text-center">
+        <p className="text-white text-sm font-medium mb-1">
+          Want product-level insights? SKU mix analysis? Margin optimization by customer?
+        </p>
+        <p className="text-[#9ca3af] text-xs">
+          That's what our full platform does. This scanner is just the starting point.{' '}
+          <a href="https://deeplineoperations.com" target="_blank" rel="noopener noreferrer" className="text-[#7c4dff] hover:text-[#b388ff] transition-colors">
+            Let's talk.
+          </a>
+        </p>
+      </div>
+
       {/* CTA */}
-      <div className="relative mt-12 rounded-2xl border border-[#7c4dff]/30 bg-gradient-to-br from-[#7c4dff]/10 via-[#1a1d2e] to-[#1a1d2e] overflow-hidden">
+      <div className="relative mt-4 rounded-2xl border border-[#7c4dff]/30 bg-gradient-to-br from-[#7c4dff]/10 via-[#1a1d2e] to-[#1a1d2e] overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[#7c4dff]/20 blur-3xl rounded-full" />
         <div className="relative px-6 py-10 sm:px-10 sm:py-14 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">

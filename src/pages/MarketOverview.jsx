@@ -4,7 +4,7 @@ import {
   LineChart, Line, AreaChart, Area,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts'
-import { TrendingUp, TrendingDown, DollarSign, Ship, Factory, Activity, Fuel, Calculator, ArrowUp, ArrowDown } from 'lucide-react'
+import { TrendingUp, TrendingDown, DollarSign, Ship, Factory, Activity, Fuel, Calculator, ArrowUp, ArrowDown, FileText, Copy, Check } from 'lucide-react'
 import MetricCard from '../components/MetricCard'
 import ChartCard from '../components/ChartCard'
 import CTASection from '../components/CTASection'
@@ -61,6 +61,8 @@ export default function MarketOverview() {
   const [selectedPPI, setSelectedPPI] = useState('All Commodities')
   const [surchargeBase, setSurchargeBase] = useState('')
   const [customTrend, setCustomTrend] = useState('')
+  const [justifyCategory, setJustifyCategory] = useState('Food Products')
+  const [justifyCopied, setJustifyCopied] = useState(false)
 
   // Process BLS PPI data for selected category
   const ppiChartData = useMemo(() => {
@@ -323,16 +325,31 @@ export default function MarketOverview() {
 
             {surchargeRecommendation && parseFloat(surchargeBase) > 0 && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="bg-[#7c4dff]/10 border border-[#7c4dff]/30 rounded-lg p-4"
+                initial={{ opacity: 0, scale: 0.95, y: 10 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                className="bg-gradient-to-br from-[#7c4dff]/15 to-[#7c4dff]/5 border-2 border-[#7c4dff]/40 rounded-xl p-5"
               >
-                <div className="text-[#9ca3af] text-xs mb-1">Recommended Fuel Surcharge</div>
-                <div className="text-3xl font-bold text-[#7c4dff]">
+                <div className="text-[#9ca3af] text-xs mb-1 uppercase tracking-wider font-medium">Recommended Fuel Surcharge</div>
+                <div className="text-4xl font-bold text-[#7c4dff] mb-3">
                   {parseFloat(surchargeRecommendation) > 0 ? surchargeRecommendation : '0'}%
                 </div>
-                <div className="text-[#9ca3af] text-xs mt-2">
-                  Based on DOE benchmark of $1.20/gal baseline. At ${surchargeBase}/mi, add ${(parseFloat(surchargeBase) * parseFloat(surchargeRecommendation) / 100).toFixed(3)}/mi surcharge.
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-[#0f1117] rounded-lg p-3">
+                    <div className="text-[#9ca3af] text-xs mb-0.5">Per Mile Surcharge</div>
+                    <div className="text-white font-bold text-lg">
+                      ${(parseFloat(surchargeBase) * Math.max(0, parseFloat(surchargeRecommendation)) / 100).toFixed(3)}
+                    </div>
+                  </div>
+                  <div className="bg-[#0f1117] rounded-lg p-3">
+                    <div className="text-[#9ca3af] text-xs mb-0.5">Monthly Impact (10K mi)</div>
+                    <div className="text-[#f59e0b] font-bold text-lg">
+                      ${(parseFloat(surchargeBase) * Math.max(0, parseFloat(surchargeRecommendation)) / 100 * 10000).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                    </div>
+                  </div>
+                </div>
+                <div className="text-[#9ca3af] text-xs mt-3">
+                  Based on DOE benchmark of $1.20/gal baseline at current diesel price of ${dieselPrice.toFixed(2)}/gal.
                 </div>
               </motion.div>
             )}
@@ -415,6 +432,112 @@ export default function MarketOverview() {
               Diesel is at ${dieselStats.latest.toFixed(2)} per gallon, {dieselStats.change > 0 ? 'up' : 'down'} {Math.abs(dieselStats.change).toFixed(1)}% from last year.
               {dieselStats.change > 3 ? ' Use the surcharge calculator above to adjust your rates.' : ' Rates are manageable for now.'}
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Price Increase Justification Tool */}
+      <div className="bg-[#1a1d2e] rounded-xl border border-[#7c4dff]/20 p-6 mb-4">
+        <div className="flex items-center gap-2 mb-1">
+          <FileText className="w-4 h-4 text-[#7c4dff]" />
+          <h3 className="text-white font-semibold text-base">Price Increase Justification</h3>
+        </div>
+        <p className="text-[#9ca3af] text-xs mb-5">
+          Select a product category to generate a data-backed customer notification draft
+        </p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <label className="text-[#9ca3af] text-xs block mb-1.5">Product Category Affected</label>
+            <select
+              value={justifyCategory}
+              onChange={(e) => setJustifyCategory(e.target.value)}
+              className="w-full bg-[#0f1117] border border-[#2a2d3e] rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#7c4dff]/50 mb-4"
+            >
+              {Object.keys(MOCK_CATEGORIES).map(k => (
+                <option key={k} value={k}>{k}</option>
+              ))}
+              {PPI_CATEGORIES.map(c => (
+                <option key={c.key} value={c.key}>{c.label}</option>
+              ))}
+            </select>
+
+            <div className="bg-[#0f1117] rounded-lg border border-[#2a2d3e] p-4">
+              <div className="text-[#9ca3af] text-xs mb-2">Supporting Data</div>
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm">
+                  <span className="text-[#9ca3af]">PPI Trend (YoY)</span>
+                  <span className="text-white font-medium">
+                    {MOCK_CATEGORIES[justifyCategory]
+                      ? `+${MOCK_CATEGORIES[justifyCategory].trend}%`
+                      : `${ppiStats.change > 0 ? '+' : ''}${ppiStats.change.toFixed(1)}%`
+                    }
+                  </span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-[#9ca3af]">Diesel Impact</span>
+                  <span className="text-white font-medium">{dieselStats.change > 0 ? '+' : ''}{dieselStats.change.toFixed(1)}%</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-[#9ca3af]">CPI (Consumer Prices)</span>
+                  <span className="text-white font-medium">{cpiStats.change > 0 ? '+' : ''}{cpiStats.change.toFixed(1)}%</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-[#9ca3af]">Source</span>
+                  <span className="text-[#7c4dff] text-xs">Bureau of Labor Statistics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="text-[#9ca3af] text-xs">Draft Customer Notification</label>
+              <button
+                onClick={() => {
+                  const ppiChange = MOCK_CATEGORIES[justifyCategory]
+                    ? MOCK_CATEGORIES[justifyCategory].trend
+                    : ppiStats.change
+                  const text = `Dear Valued Customer,\n\nWe are writing to inform you of an upcoming price adjustment effective [DATE]. Due to a ${Math.abs(ppiChange).toFixed(1)}% ${ppiChange > 0 ? 'increase' : 'change'} in ${justifyCategory.toLowerCase()} costs as reported by the Bureau of Labor Statistics Producer Price Index, combined with a ${Math.abs(dieselStats.change).toFixed(1)}% ${dieselStats.change > 0 ? 'increase' : 'change'} in transportation fuel costs, we must adjust our pricing to reflect current market conditions.\n\nThis adjustment of [X]% will take effect on [DATE] and applies to [SPECIFIC PRODUCTS/CATEGORIES].\n\nWe remain committed to providing you with competitive pricing and exceptional service. These adjustments allow us to maintain the quality and reliability you depend on.\n\nPlease contact your account representative with any questions.\n\nSincerely,\n[YOUR NAME]\n[COMPANY]`
+                  navigator.clipboard.writeText(text)
+                  setJustifyCopied(true)
+                  setTimeout(() => setJustifyCopied(false), 2000)
+                }}
+                className="flex items-center gap-1 text-xs text-[#7c4dff] hover:text-[#b388ff] transition-colors"
+              >
+                {justifyCopied ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
+                {justifyCopied ? 'Copied!' : 'Copy'}
+              </button>
+            </div>
+            <div className="bg-[#0f1117] rounded-lg border border-[#2a2d3e] p-4 text-sm text-[#9ca3af] leading-relaxed h-[280px] overflow-y-auto">
+              <p className="mb-3">Dear Valued Customer,</p>
+              <p className="mb-3">
+                We are writing to inform you of an upcoming price adjustment effective [DATE]. Due to a{' '}
+                <span className="text-white font-medium">
+                  {MOCK_CATEGORIES[justifyCategory]
+                    ? `${MOCK_CATEGORIES[justifyCategory].trend}%`
+                    : `${Math.abs(ppiStats.change).toFixed(1)}%`
+                  }
+                </span>{' '}
+                {(MOCK_CATEGORIES[justifyCategory]?.trend || ppiStats.change) > 0 ? 'increase' : 'change'} in{' '}
+                <span className="text-white font-medium">{justifyCategory.toLowerCase()}</span> costs as reported by the
+                Bureau of Labor Statistics Producer Price Index, combined with a{' '}
+                <span className="text-white font-medium">{Math.abs(dieselStats.change).toFixed(1)}%</span>{' '}
+                {dieselStats.change > 0 ? 'increase' : 'change'} in transportation fuel costs, we must adjust our pricing
+                to reflect current market conditions.
+              </p>
+              <p className="mb-3">
+                This adjustment of <span className="text-[#f59e0b] font-medium">[X]%</span> will take effect on{' '}
+                <span className="text-[#f59e0b] font-medium">[DATE]</span> and applies to{' '}
+                <span className="text-[#f59e0b] font-medium">[SPECIFIC PRODUCTS/CATEGORIES]</span>.
+              </p>
+              <p className="mb-3">
+                We remain committed to providing you with competitive pricing and exceptional service.
+                These adjustments allow us to maintain the quality and reliability you depend on.
+              </p>
+              <p className="mb-3">Please contact your account representative with any questions.</p>
+              <p>Sincerely,<br /><span className="text-[#f59e0b]">[YOUR NAME]</span><br /><span className="text-[#f59e0b]">[COMPANY]</span></p>
+            </div>
           </div>
         </div>
       </div>

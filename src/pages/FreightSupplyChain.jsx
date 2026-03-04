@@ -251,14 +251,31 @@ export default function FreightSupplyChain() {
             </div>
             {surchargeResult && parseFloat(surchargeRate) > 0 && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="bg-[#7c4dff]/10 border border-[#7c4dff]/30 rounded-lg p-4"
+                initial={{ opacity: 0, scale: 0.95, y: 10 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                className="bg-gradient-to-br from-[#7c4dff]/15 to-[#7c4dff]/5 border-2 border-[#7c4dff]/40 rounded-xl p-5"
               >
-                <div className="text-[#9ca3af] text-xs mb-1">Recommended Surcharge</div>
-                <div className="text-3xl font-bold text-[#7c4dff]">{parseFloat(surchargeResult) > 0 ? surchargeResult : '0'}%</div>
-                <div className="text-[#9ca3af] text-xs mt-2">
-                  Add ${(parseFloat(surchargeRate) * Math.max(0, parseFloat(surchargeResult)) / 100).toFixed(3)}/mi to your base rate
+                <div className="text-[#9ca3af] text-xs mb-1 uppercase tracking-wider font-medium">Recommended Surcharge</div>
+                <div className="text-4xl font-bold text-[#7c4dff] mb-3">
+                  {parseFloat(surchargeResult) > 0 ? surchargeResult : '0'}%
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-[#0f1117] rounded-lg p-3">
+                    <div className="text-[#9ca3af] text-xs mb-0.5">Per Mile Surcharge</div>
+                    <div className="text-white font-bold text-lg">
+                      ${(parseFloat(surchargeRate) * Math.max(0, parseFloat(surchargeResult)) / 100).toFixed(3)}
+                    </div>
+                  </div>
+                  <div className="bg-[#0f1117] rounded-lg p-3">
+                    <div className="text-[#9ca3af] text-xs mb-0.5">Monthly Impact (10K mi)</div>
+                    <div className="text-[#f59e0b] font-bold text-lg">
+                      ${(parseFloat(surchargeRate) * Math.max(0, parseFloat(surchargeResult)) / 100 * 10000).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                    </div>
+                  </div>
+                </div>
+                <div className="text-[#9ca3af] text-xs mt-3">
+                  Based on DOE benchmark of $1.20/gal baseline at ${surchargeCurrentDiesel}/gal diesel.
                 </div>
               </motion.div>
             )}

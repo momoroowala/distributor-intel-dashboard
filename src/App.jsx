@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import {
-  Star, TrendingUp, Truck, Shield, Package, Building2, MapPin, Target,
+  Star, TrendingUp, Truck, Shield, Package, Building2, MapPin, Target, Home as HomeIcon,
 } from 'lucide-react';
+import Home from './pages/Home';
 import CustomerHealthScanner from './pages/CustomerHealthScanner';
 import MarketOverview from './pages/MarketOverview';
 import FoodBeverage from './pages/FoodBeverage';
@@ -41,6 +42,12 @@ function App() {
           </div>
 
           <nav className="p-3 flex md:block overflow-x-auto">
+            {/* ── HOME ─────────────────────────── */}
+            <NavLink to="/" end className={navLinkClass}>
+              <HomeIcon className="w-5 h-5 flex-shrink-0" />
+              <span>Command Center</span>
+            </NavLink>
+
             {/* ── MY BUSINESS ────────────────── */}
             {sectionLabel('My Business')}
             <NavLink to="/customer-scanner" className={navLinkClass}>
@@ -60,10 +67,6 @@ function App() {
             <NavLink to="/freight" className={navLinkClass}>
               <Truck className="w-5 h-5 flex-shrink-0" />
               <span>Freight & Logistics</span>
-            </NavLink>
-            <NavLink to="/trade" className={navLinkClass}>
-              <Shield className="w-5 h-5 flex-shrink-0" />
-              <span>Trade & Tariffs</span>
             </NavLink>
 
             {/* ── INDUSTRY ────────────────────── */}
@@ -90,8 +93,20 @@ function App() {
           </nav>
 
           <div className="hidden md:block mt-auto p-4 border-t border-indigo-900/50">
-            <div className="text-xs text-indigo-400">
-              Last updated: {new Date().toLocaleDateString()}
+            <div className="text-xs text-indigo-300 font-medium mb-1">Deepline Operations</div>
+            <div className="text-xs text-indigo-400/70 mb-2">
+              We help distributors find revenue they're leaving on the table.
+            </div>
+            <a
+              href="https://deeplineoperations.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+            >
+              Book a Discovery Call
+            </a>
+            <div className="text-xs text-indigo-400/50 mt-2">
+              Updated: {new Date().toLocaleDateString()}
             </div>
           </div>
         </aside>
@@ -100,7 +115,7 @@ function App() {
         <main className="flex-1 overflow-y-auto">
           <div className="max-w-7xl mx-auto p-4 md:p-8">
             <Routes>
-              <Route path="/" element={<Navigate to="/customer-scanner" replace />} />
+              <Route path="/" element={<Home />} />
               <Route path="/customer-scanner" element={<CustomerHealthScanner />} />
               <Route path="/market" element={<MarketOverview />} />
               <Route path="/food-beverage" element={<FoodBeverage />} />

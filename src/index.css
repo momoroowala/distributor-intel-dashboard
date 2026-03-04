@@ -39,3 +39,46 @@ body {
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
+
+/* Print-friendly styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .max-w-7xl {
+    max-width: 100% !important;
+    padding: 1rem !important;
+  }
+
+  button, a[href*="deepline"] {
+    display: none !important;
+  }
+
+  /* Keep important content visible */
+  [class*="bg-[#1a1d2e]"],
+  [class*="bg-[#0f1117]"] {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  [class*="text-white"] {
+    color: #111 !important;
+  }
+
+  [class*="text-[#9ca3af]"] {
+    color: #555 !important;
+  }
+}
