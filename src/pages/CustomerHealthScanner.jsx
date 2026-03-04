@@ -7,7 +7,8 @@ import {
 import {
   Upload, Users, AlertTriangle, TrendingDown, DollarSign,
   ChevronDown, ChevronUp, Download, Star, Phone,
-  Target, Sparkles, FileText, Search, Shield, Printer
+  Target, Sparkles, FileText, Search, Shield, Printer,
+  ArrowRight, BarChart3, Lock, HelpCircle
 } from 'lucide-react'
 import CTASection from '../components/CTASection'
 
@@ -403,6 +404,7 @@ export default function CustomerHealthScanner() {
   const [expandedRows, setExpandedRows] = useState(new Set())
   const [selectedSegment, setSelectedSegment] = useState(null)
   const [searchTerm, setSearchTerm] = useState('')
+  const [showQBInstructions, setShowQBInstructions] = useState(false)
   const fileInputRef = useRef(null)
 
   const processData = useCallback((orders) => {
@@ -579,20 +581,64 @@ export default function CustomerHealthScanner() {
           </p>
         </motion.div>
 
-        {/* Trust callout */}
+        {/* Trust badge */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-8 bg-[#4caf50]/5 border border-[#4caf50]/20 rounded-xl p-5 flex items-center gap-4"
+          className="mt-6 flex justify-center"
         >
-          <div className="w-10 h-10 rounded-full bg-[#4caf50]/10 flex items-center justify-center flex-shrink-0">
-            <Shield className="w-5 h-5 text-[#4caf50]" />
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#4caf50]/10 border border-[#4caf50]/30">
+            <Lock className="w-4 h-4 text-[#4caf50]" />
+            <span className="text-[#4caf50] text-sm font-medium">
+              Your data never leaves your computer. Zero uploads. Zero storage. 100% browser-based analysis.
+            </span>
           </div>
-          <div>
-            <div className="text-white text-sm font-medium mb-0.5">100% browser-based. Your data never leaves your computer.</div>
-            <div className="text-[#9ca3af] text-xs">No servers, no uploads, no storage. All analysis runs locally in your browser. Close the tab and it's gone.</div>
-          </div>
+        </motion.div>
+
+        {/* QuickBooks Export Instructions */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="mt-6"
+        >
+          <button
+            onClick={() => setShowQBInstructions(!showQBInstructions)}
+            className="flex items-center gap-2 text-[#7c4dff] hover:text-[#b388ff] text-sm transition-colors mx-auto"
+          >
+            <HelpCircle className="w-4 h-4" />
+            Need help exporting from QuickBooks?
+            {showQBInstructions ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          </button>
+          <AnimatePresence>
+            {showQBInstructions && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="overflow-hidden"
+              >
+                <div className="mt-3 bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] p-5 max-w-lg mx-auto">
+                  <h4 className="text-white text-sm font-semibold mb-3 flex items-center gap-2">
+                    <FileText className="w-4 h-4 text-[#7c4dff]" />
+                    How to export from QuickBooks (30 seconds)
+                  </h4>
+                  <ol className="text-[#9ca3af] text-sm space-y-2 list-decimal list-inside">
+                    <li>Go to <span className="text-white">Reports &rarr; Sales &rarr; Sales by Customer Detail</span></li>
+                    <li>Set your date range (<span className="text-white">last 12 months</span> recommended)</li>
+                    <li>Click <span className="text-white">Export &rarr; Export to Excel</span></li>
+                    <li>Save as CSV</li>
+                    <li>Upload here</li>
+                  </ol>
+                  <p className="text-[#9ca3af]/70 text-xs mt-3">
+                    Columns needed: <span className="text-white">Customer Name, Date, Amount</span>
+                  </p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
 
         {/* How it works */}
@@ -659,6 +705,20 @@ export default function CustomerHealthScanner() {
           </button>
         </div>
       </div>
+
+      {/* Case Study Callout */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+        className="bg-[#7c4dff]/5 border border-[#7c4dff]/20 rounded-xl p-4 mb-6 flex items-start gap-3"
+      >
+        <BarChart3 className="w-5 h-5 text-[#7c4dff] flex-shrink-0 mt-0.5" />
+        <p className="text-[#9ca3af] text-sm">
+          <span className="text-white font-medium">Real Result:</span> A $28M food distributor found $187K in at-risk revenue using this exact analysis.
+          They recovered $94K in 90 days by having reps call the right accounts.
+        </p>
+      </motion.div>
 
       {/* Ghost Revenue Banner */}
       <motion.div
@@ -874,6 +934,29 @@ export default function CustomerHealthScanner() {
           </div>
         </motion.div>
       )}
+
+      {/* Diagnostic CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+        className="mb-8 text-center py-8 px-6 bg-[#1a1d2e] rounded-xl border border-[#7c4dff]/20"
+      >
+        <h3 className="text-white text-xl font-bold mb-2">Ready to run this on YOUR data?</h3>
+        <p className="text-[#9ca3af] text-sm max-w-xl mx-auto mb-5">
+          Book a free 20-minute diagnostic. We&apos;ll walk through your QuickBooks export
+          and show you exactly which customers need attention this week.
+        </p>
+        <a
+          href="https://deeplineoperations.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#7c4dff] hover:bg-[#5c3db8] text-white font-semibold text-sm transition-all shadow-lg shadow-[#7c4dff]/20 hover:shadow-[#7c4dff]/40"
+        >
+          Book Your Free Diagnostic
+          <ArrowRight className="w-4 h-4" />
+        </a>
+      </motion.div>
 
       {/* Customer Table */}
       <motion.div

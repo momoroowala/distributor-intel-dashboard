@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
   Target, TrendingUp, TrendingDown, Truck, Package, AlertTriangle,
-  ArrowRight, DollarSign, Fuel, Activity, Shield, Users
+  ArrowRight, DollarSign, Fuel, Activity, Shield, Users,
+  Upload, BarChart3, Phone, Quote, Linkedin, ExternalLink
 } from 'lucide-react'
 
 import blsData from '../data/bls_ppi.json'
@@ -111,65 +112,49 @@ export default function Home() {
     return items.slice(0, 4)
   }, [dieselStats, ppiStats, truckloadStats, cpiStats, salesStats])
 
-  const quickStats = [
-    { label: 'Diesel Price', value: `$${dieselStats.latest.toFixed(2)}`, suffix: '/gal', change: dieselStats.change, icon: Fuel },
-    { label: 'Producer Prices', value: ppiStats.latest.toFixed(1), suffix: ' PPI', change: ppiStats.change, icon: TrendingUp },
-    { label: 'Freight Index', value: truckloadStats.latest.toFixed(1), suffix: '', change: truckloadStats.change, icon: Truck },
-    { label: 'Wholesale Sales', value: `$${(salesStats.latest / 1000).toFixed(1)}`, suffix: 'B', change: salesStats.change, icon: Activity },
-  ]
-
   return (
     <div>
-      {/* Hero Header */}
+      {/* ── Hero Section ──────────────────────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mb-8"
+        className="mb-10"
       >
-        <div className="flex items-center gap-2 mb-2">
-          <Activity className="w-5 h-5 text-[#7c4dff]" />
-          <h2 className="text-xl font-bold text-white">Distribution Command Center</h2>
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 leading-tight">
+          Your Customers Are Leaving.<br />
+          <span className="text-[#7c4dff]">We Show You Which Ones.</span>
+        </h1>
+        <p className="text-[#9ca3af] text-base sm:text-lg max-w-2xl mb-6">
+          Upload your order history. In 60 seconds, see which accounts need attention Monday morning,
+          how much revenue is at risk, and exactly who to call first.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link
+            to="/customer-scanner"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#7c4dff] hover:bg-[#5c3db8] text-white font-semibold text-base transition-all shadow-lg shadow-[#7c4dff]/20 hover:shadow-[#7c4dff]/40"
+          >
+            <Target className="w-5 h-5" />
+            Scan Your Customer Health
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+          <a
+            href="https://deeplineoperations.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1a1d2e] border border-[#2a2d3e] hover:border-[#7c4dff]/50 text-white font-medium text-base transition-all"
+          >
+            <Phone className="w-4 h-4" />
+            Book a Free 20-Minute Diagnostic
+            <ExternalLink className="w-4 h-4 text-[#9ca3af]" />
+          </a>
         </div>
-        <p className="text-[#f59e0b] text-sm font-medium">
-          See what's happening in distribution this week and find the revenue you're leaving on the table.
-        </p>
-        <p className="text-[#9ca3af]/60 text-xs mt-1">
-          Data from BLS, FRED, Census Bureau & EIA | Updated {new Date(blsData.updated).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-        </p>
       </motion.div>
 
-      {/* Quick Stats Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
-        {quickStats.map((stat, i) => (
-          <motion.div
-            key={stat.label}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.08 }}
-            className="bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] p-4"
-          >
-            <div className="flex items-center gap-2 mb-2">
-              <stat.icon className="w-4 h-4 text-[#7c4dff]" />
-              <span className="text-[#9ca3af] text-xs">{stat.label}</span>
-            </div>
-            <div className="text-white text-xl font-bold">
-              {stat.value}<span className="text-sm font-normal text-[#9ca3af]">{stat.suffix}</span>
-            </div>
-            <div className={`text-xs font-medium mt-1 flex items-center gap-1 ${
-              stat.change > 0 ? 'text-[#ef4444]' : stat.change < 0 ? 'text-[#4caf50]' : 'text-[#9ca3af]'
-            }`}>
-              {stat.change > 0 ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
-              {stat.change > 0 ? '+' : ''}{stat.change.toFixed(1)}% YoY
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Alert Cards */}
-      <div className="mb-8">
+      {/* ── Alert Cards ───────────────────────────────────────────────── */}
+      <div className="mb-10">
         <h3 className="text-white font-semibold text-sm mb-3 flex items-center gap-2">
           <AlertTriangle className="w-4 h-4 text-[#f59e0b]" />
-          This Week's Alerts
+          This Week&apos;s Market Alerts
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {alerts.map((alert, i) => (
@@ -203,81 +188,165 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Customer Health Scanner CTA */}
+      {/* ── Case Study / Social Proof ─────────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="relative rounded-2xl border border-[#7c4dff]/30 bg-gradient-to-br from-[#7c4dff]/15 via-[#1a1d2e] to-[#1a1d2e] overflow-hidden mb-8"
+        transition={{ delay: 0.4 }}
+        className="mb-10"
       >
-        <div className="absolute top-0 left-1/3 w-72 h-24 bg-[#7c4dff]/20 blur-3xl rounded-full" />
-        <div className="relative px-6 py-10 sm:px-10">
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-2">
-                <Target className="w-5 h-5 text-[#7c4dff]" />
-                <span className="text-[#7c4dff] text-xs font-semibold uppercase tracking-wider">Featured Tool</span>
+        <div className="bg-[#1a1d2e] rounded-2xl border border-[#7c4dff]/20 p-8 relative overflow-hidden">
+          <div className="absolute top-4 left-6 opacity-10">
+            <Quote className="w-16 h-16 text-[#7c4dff]" />
+          </div>
+          <div className="relative">
+            <p className="text-[#9ca3af] text-xs font-semibold uppercase tracking-wider mb-3">Real Result</p>
+            <p className="text-white text-lg sm:text-xl leading-relaxed mb-4">
+              A <span className="text-[#7c4dff] font-semibold">$28M food distributor</span> in the Northeast had
+              31 accounts that hadn&apos;t ordered in 60+ days. They didn&apos;t know.
+            </p>
+            <p className="text-[#9ca3af] text-base leading-relaxed mb-4">
+              We found <span className="text-[#f59e0b] font-semibold">$187K in at-risk revenue</span> in under 48 hours.
+              They recovered <span className="text-[#4caf50] font-semibold">$94K in the first quarter</span>.
+            </p>
+            <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#ef4444]" />
+                <span className="text-[#9ca3af]">31 dormant accounts found</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Customer Health Scanner
-              </h3>
-              <p className="text-[#9ca3af] text-sm mb-4">
-                Upload your order history CSV and instantly find which customers are slipping away,
-                how much ghost revenue you're losing, and exactly who to call Monday morning.
-              </p>
-              <div className="flex items-center gap-4 text-xs text-[#9ca3af]">
-                <span className="flex items-center gap-1">
-                  <Shield className="w-3 h-3 text-[#4caf50]" />
-                  100% browser-based
-                </span>
-                <span className="flex items-center gap-1">
-                  <Users className="w-3 h-3 text-[#7c4dff]" />
-                  RFM segmentation
-                </span>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#f59e0b]" />
+                <span className="text-[#9ca3af]">$187K at risk</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#4caf50]" />
+                <span className="text-[#9ca3af]">$94K recovered</span>
               </div>
             </div>
-            <Link
-              to="/customer-scanner"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#7c4dff] hover:bg-[#5c3db8] text-white font-semibold text-base transition-all shadow-lg shadow-[#7c4dff]/20 hover:shadow-[#7c4dff]/40 flex-shrink-0"
-            >
-              Scan Your Customers
-              <ArrowRight className="w-5 h-5" />
-            </Link>
           </div>
         </div>
       </motion.div>
 
-      {/* Quick Nav Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {[
-          { to: '/market', icon: TrendingUp, title: 'Market Overview', desc: 'PPI trends, diesel prices, and surcharge calculator', color: '#7c4dff' },
-          { to: '/freight', icon: Truck, title: 'Freight & Logistics', desc: 'Cost impact simulator and freight rate trends', color: '#f59e0b' },
-          { to: '/food-beverage', icon: Package, title: 'Food & Beverage', desc: 'Category-specific trends and pricing signals', color: '#4caf50' },
-          { to: '/industry', icon: Activity, title: 'Industry Deep Dive', desc: 'Category breakdown, employment, and competitive landscape', color: '#2196f3' },
-          { to: '/regional', icon: TrendingUp, title: 'Regional Analysis', desc: 'State-by-state distribution data and market concentration', color: '#00bcd4' },
-          { to: '/threats', icon: Shield, title: 'Risk & Security', desc: 'Cargo theft trends and vulnerability assessment', color: '#ef4444' },
-        ].map((nav, i) => (
-          <motion.div
-            key={nav.to}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 + i * 0.05 }}
-          >
-            <Link
-              to={nav.to}
-              className="block bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] p-5 hover:border-[#7c4dff]/30 transition-all group"
+      {/* ── How It Works ──────────────────────────────────────────────── */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="mb-10"
+      >
+        <h3 className="text-white font-semibold text-lg mb-5 text-center">How It Works</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            {
+              icon: Upload,
+              step: '1',
+              title: 'Upload your QuickBooks export (CSV)',
+              desc: 'Export your Sales by Customer Detail report and drop the CSV here.',
+            },
+            {
+              icon: BarChart3,
+              step: '2',
+              title: 'We analyze recency, frequency, and spend patterns',
+              desc: 'Our RFM engine scores every customer and identifies who\'s slipping.',
+            },
+            {
+              icon: Phone,
+              step: '3',
+              title: 'Get your Monday call list with specific accounts and talking points',
+              desc: 'Know exactly who to call, why, and what to say — sorted by revenue impact.',
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={item.step}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 + i * 0.1 }}
+              className="bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] p-6 text-center relative"
             >
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: nav.color + '20' }}>
-                  <nav.icon className="w-4 h-4" style={{ color: nav.color }} />
-                </div>
-                <h4 className="text-white font-medium text-sm group-hover:text-[#7c4dff] transition-colors">{nav.title}</h4>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-[#7c4dff] flex items-center justify-center text-white text-xs font-bold">
+                {item.step}
               </div>
-              <p className="text-[#9ca3af] text-xs">{nav.desc}</p>
-            </Link>
-          </motion.div>
-        ))}
-      </div>
+              <item.icon className="w-8 h-8 text-[#7c4dff] mx-auto mb-3 mt-2" />
+              <h4 className="text-white font-semibold text-sm mb-2">{item.title}</h4>
+              <p className="text-[#9ca3af] text-xs">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+        <div className="text-center mt-6">
+          <Link
+            to="/customer-scanner"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#7c4dff] hover:bg-[#5c3db8] text-white font-semibold text-sm transition-all shadow-lg shadow-[#7c4dff]/20 hover:shadow-[#7c4dff]/40"
+          >
+            Try It Now — Free
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </motion.div>
+
+      {/* ── About Mo / Deepline Operations ─────────────────────────────── */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7 }}
+        className="mb-10"
+      >
+        <div className="bg-[#1a1d2e] rounded-2xl border border-[#2a2d3e] p-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-[#7c4dff]/20 rounded-full flex items-center justify-center">
+              <Users className="w-5 h-5 text-[#7c4dff]" />
+            </div>
+            <div>
+              <h3 className="text-white font-semibold text-base">Built by Mo Roowala</h3>
+              <p className="text-[#9ca3af] text-xs">Deepline Operations</p>
+            </div>
+          </div>
+          <div className="text-[#9ca3af] text-sm leading-relaxed space-y-3">
+            <p>
+              I spent years watching distributors lose customers they didn&apos;t know were leaving.
+              The data was always there, buried in QuickBooks exports and spreadsheets nobody
+              had time to analyze.
+            </p>
+            <p>
+              So I built the tools to do it automatically.
+            </p>
+            <p>
+              Deepline Operations works exclusively with mid-size distributors ($5M–$100M)
+              who run on QuickBooks and spreadsheets. We turn your existing customer data into
+              weekly action plans: which accounts are slipping, which reps need to call whom,
+              and where your margins are eroding.
+            </p>
+            <p className="text-white font-medium">
+              No ERP overhaul. No 18-month implementation. Just your data, analyzed weekly,
+              delivered as a Monday morning call list your team actually uses.
+            </p>
+          </div>
+          <div className="flex items-center gap-3 mt-6">
+            <a
+              href="https://deeplineoperations.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#7c4dff] hover:bg-[#5c3db8] text-white font-medium text-sm transition-all"
+            >
+              Book a Call
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#0f1117] border border-[#2a2d3e] hover:border-[#7c4dff]/50 text-[#9ca3af] hover:text-white text-sm transition-all"
+            >
+              <Linkedin className="w-4 h-4" />
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* ── Data attribution ──────────────────────────────────────────── */}
+      <p className="text-[#9ca3af]/40 text-xs text-center">
+        Market data from BLS, FRED, Census Bureau & EIA | Updated {new Date(blsData.updated).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+      </p>
     </div>
   )
 }
