@@ -4,7 +4,7 @@
     "https://ers.usda.gov/data-products/food-price-outlook",
     "https://api.bls.gov/publicAPI/v2/timeseries/data/"
   ],
-  "fetched_at": "2026-03-04T09:40:37.066361Z",
+  "fetched_at": "2026-03-05T09:46:09.882743Z",
   "bls_food_cpi": {
     "CUSR0000SAF": {
       "name": "Food at home",
