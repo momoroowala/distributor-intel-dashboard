@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-03-06T09:38:00.658245Z",
+  "fetched_at": "2026-03-07T09:29:20.519889Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1174,7 +1174,7 @@
         },
         {
           "date": "2024-12-01",
-          "value": 686602.0
+          "value": 686278.0
         },
         {
           "date": "2025-01-01",
@@ -1218,12 +1218,16 @@
         },
         {
           "date": "2025-11-01",
-          "value": 714091.0
+          "value": 714732.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 722077.0
         }
       ],
       "latest": {
-        "date": "2025-11-01",
-        "value": 714091.0
+        "date": "2025-12-01",
+        "value": 722077.0
       }
     },
     "WHLSLRIMSA": {
@@ -1371,7 +1375,7 @@
         },
         {
           "date": "2024-12-01",
-          "value": 892308.0
+          "value": 891703.0
         },
         {
           "date": "2025-01-01",
@@ -1415,12 +1419,16 @@
         },
         {
           "date": "2025-11-01",
-          "value": 914970.0
+          "value": 915713.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 917966.0
         }
       ],
       "latest": {
-        "date": "2025-11-01",
-        "value": 914970.0
+        "date": "2025-12-01",
+        "value": 917966.0
       }
     },
     "ISRATIO": {
@@ -1613,11 +1621,15 @@
         {
           "date": "2025-11-01",
           "value": 1.37
+        },
+        {
+          "date": "2025-12-01",
+          "value": 1.36
         }
       ],
       "latest": {
-        "date": "2025-11-01",
-        "value": 1.37
+        "date": "2025-12-01",
+        "value": 1.36
       }
     },
     "RETAILSMNSA": {
@@ -1809,12 +1821,16 @@
         },
         {
           "date": "2025-11-01",
-          "value": 640086.0
+          "value": 640201.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 717004.0
         }
       ],
       "latest": {
-        "date": "2025-11-01",
-        "value": 640086.0
+        "date": "2025-12-01",
+        "value": 717004.0
       }
     },
     "DEXCHUS": {
