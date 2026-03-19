@@ -1,7 +1,7 @@
 {
   "source": "BLS - PPI, CES, QCEW",
   "url": "https://data.bls.gov/cew/",
-  "fetched_at": "2026-03-18T09:56:41.422291Z",
+  "fetched_at": "2026-03-19T09:44:20.298428Z",
   "ppi_wholesale": {
     "WPU00000000": {
       "name": "All commodities PPI",
@@ -233,23 +233,28 @@
         },
         {
           "period": "2025-10",
-          "value": 260.599,
+          "value": 260.591,
           "pct_change_12m": 3.0
         },
         {
           "period": "2025-11",
-          "value": 261.473,
+          "value": 261.579,
           "pct_change_12m": 3.3
         },
         {
           "period": "2025-12",
-          "value": 260.817,
-          "pct_change_12m": 2.9
+          "value": 261.02,
+          "pct_change_12m": 3.0
         },
         {
           "period": "2026-01",
-          "value": 261.524,
-          "pct_change_12m": 1.6
+          "value": 262.39,
+          "pct_change_12m": 2.0
+        },
+        {
+          "period": "2026-02",
+          "value": 267.848,
+          "pct_change_12m": 3.2
         }
       ]
     },
@@ -483,23 +488,28 @@
         },
         {
           "period": "2025-10",
-          "value": 233.393,
+          "value": 233.428,
           "pct_change_12m": 8.5
         },
         {
           "period": "2025-11",
-          "value": 233.517,
+          "value": 233.539,
           "pct_change_12m": 1.2
         },
         {
           "period": "2025-12",
-          "value": 230.589,
+          "value": 230.601,
           "pct_change_12m": -1.4
         },
         {
           "period": "2026-01",
-          "value": 222.317,
-          "pct_change_12m": -7.2
+          "value": 222.804,
+          "pct_change_12m": -7.0
+        },
+        {
+          "period": "2026-02",
+          "value": 241.653,
+          "pct_change_12m": -4.6
         }
       ]
     },
@@ -733,23 +743,28 @@
         },
         {
           "period": "2025-10",
-          "value": 275.21,
+          "value": 275.226,
           "pct_change_12m": 3.4
         },
         {
           "period": "2025-11",
-          "value": 274.485,
+          "value": 274.591,
           "pct_change_12m": 2.5
         },
         {
           "period": "2025-12",
-          "value": 273.036,
+          "value": 273.202,
           "pct_change_12m": 2.0
         },
         {
           "period": "2026-01",
-          "value": 272.776,
-          "pct_change_12m": 1.5
+          "value": 273.465,
+          "pct_change_12m": 1.7
+        },
+        {
+          "period": "2026-02",
+          "value": 274.24,
+          "pct_change_12m": 1.3
         }
       ]
     },
@@ -983,23 +998,28 @@
         },
         {
           "period": "2025-10",
-          "value": 191.456,
+          "value": 191.404,
           "pct_change_12m": 3.4
         },
         {
           "period": "2025-11",
-          "value": 191.589,
+          "value": 191.539,
           "pct_change_12m": 4.3
         },
         {
           "period": "2025-12",
-          "value": 193.054,
+          "value": 192.943,
           "pct_change_12m": 4.3
         },
         {
           "period": "2026-01",
-          "value": 192.728,
-          "pct_change_12m": 3.5
+          "value": 193.061,
+          "pct_change_12m": 3.7
+        },
+        {
+          "period": "2026-02",
+          "value": 194.107,
+          "pct_change_12m": 4.5
         }
       ]
     },
@@ -1233,23 +1253,28 @@
         },
         {
           "period": "2025-10",
-          "value": 349.374,
-          "pct_change_12m": 0.7
+          "value": 349.003,
+          "pct_change_12m": 0.6
         },
         {
           "period": "2025-11",
-          "value": 348.695,
-          "pct_change_12m": 0.9
+          "value": 348.061,
+          "pct_change_12m": 0.7
         },
         {
           "period": "2025-12",
-          "value": 348.034,
+          "value": 347.813,
           "pct_change_12m": 0.7
         },
         {
           "period": "2026-01",
-          "value": 348.629,
-          "pct_change_12m": -0.1
+          "value": 348.282,
+          "pct_change_12m": -0.2
+        },
+        {
+          "period": "2026-02",
+          "value": 350.677,
+          "pct_change_12m": 0.2
         }
       ]
     },
@@ -1483,23 +1508,28 @@
         },
         {
           "period": "2025-10",
-          "value": 255.419,
-          "pct_change_12m": 0.5
+          "value": 255.177,
+          "pct_change_12m": 0.4
         },
         {
           "period": "2025-11",
-          "value": 255.333,
+          "value": 255.101,
           "pct_change_12m": 0.5
         },
         {
           "period": "2025-12",
-          "value": 255.278,
-          "pct_change_12m": 0.7
+          "value": 255.055,
+          "pct_change_12m": 0.6
         },
         {
           "period": "2026-01",
-          "value": 256.05,
+          "value": 255.9,
           "pct_change_12m": 0.5
+        },
+        {
+          "period": "2026-02",
+          "value": 256.074,
+          "pct_change_12m": 0.9
         }
       ]
     },
@@ -1733,23 +1763,28 @@
         },
         {
           "period": "2025-10",
-          "value": 297.618,
-          "pct_change_12m": 0.0
+          "value": 297.587,
+          "pct_change_12m": -0.1
         },
         {
           "period": "2025-11",
-          "value": 298.01,
+          "value": 297.937,
           "pct_change_12m": -0.3
         },
         {
           "period": "2025-12",
-          "value": 298.209,
+          "value": 298.208,
           "pct_change_12m": -0.4
         },
         {
           "period": "2026-01",
-          "value": 300.16,
-          "pct_change_12m": 0.4
+          "value": 299.364,
+          "pct_change_12m": 0.1
+        },
+        {
+          "period": "2026-02",
+          "value": 301.413,
+          "pct_change_12m": 0.2
         }
       ]
     },
@@ -1983,23 +2018,28 @@
         },
         {
           "period": "2025-10",
-          "value": 344.431,
+          "value": 344.453,
           "pct_change_12m": 1.4
         },
         {
           "period": "2025-11",
-          "value": 343.618,
+          "value": 343.637,
           "pct_change_12m": 1.2
         },
         {
           "period": "2025-12",
-          "value": 343.641,
+          "value": 343.664,
           "pct_change_12m": 1.4
         },
         {
           "period": "2026-01",
-          "value": 343.863,
-          "pct_change_12m": 1.3
+          "value": 344.059,
+          "pct_change_12m": 1.4
+        },
+        {
+          "period": "2026-02",
+          "value": 345.179,
+          "pct_change_12m": 1.4
         }
       ]
     },
@@ -2233,23 +2273,28 @@
         },
         {
           "period": "2025-10",
-          "value": 337.729,
-          "pct_change_12m": 9.7
-        },
-        {
-          "period": "2025-11",
-          "value": 338.951,
+          "value": 337.898,
           "pct_change_12m": 9.8
         },
         {
+          "period": "2025-11",
+          "value": 339.221,
+          "pct_change_12m": 9.9
+        },
+        {
           "period": "2025-12",
-          "value": 348.323,
-          "pct_change_12m": 14.0
+          "value": 349.56,
+          "pct_change_12m": 14.4
         },
         {
           "period": "2026-01",
-          "value": 356.1,
-          "pct_change_12m": null
+          "value": 358.215,
+          "pct_change_12m": 16.7
+        },
+        {
+          "period": "2026-02",
+          "value": 363.534,
+          "pct_change_12m": 16.6
         }
       ]
     }
