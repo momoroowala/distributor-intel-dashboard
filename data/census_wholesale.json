@@ -2,7 +2,7 @@
   "source": "US Census Bureau - Monthly Wholesale Trade Survey",
   "url": "https://census.gov/wholesale/",
   "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
-  "fetched_at": "2026-03-19T09:43:55.598339Z",
+  "fetched_at": "2026-03-20T09:40:58.778468Z",
   "categories": {
     "42": {
       "name": "Total Wholesale Trade",
@@ -22,7 +22,7 @@
           },
           {
             "period": "2025-01",
-            "value": 680213.0
+            "value": 676577.0
           },
           {
             "period": "2025-02",
@@ -66,7 +66,11 @@
           },
           {
             "period": "2025-12",
-            "value": 722077.0
+            "value": 723871.0
+          },
+          {
+            "period": "2026-01",
+            "value": 727498.0
           }
         ],
         "inventories": [
@@ -84,7 +88,7 @@
           },
           {
             "period": "2025-01",
-            "value": 899458.0
+            "value": 900015.0
           },
           {
             "period": "2025-02",
@@ -128,7 +132,11 @@
           },
           {
             "period": "2025-12",
-            "value": 917966.0
+            "value": 914350.0
+          },
+          {
+            "period": "2026-01",
+            "value": 909334.0
           }
         ]
       }
@@ -151,7 +159,7 @@
           },
           {
             "period": "2025-01",
-            "value": 76565.0
+            "value": 76723.0
           },
           {
             "period": "2025-02",
@@ -195,7 +203,11 @@
           },
           {
             "period": "2025-12",
-            "value": 80066.0
+            "value": 80119.0
+          },
+          {
+            "period": "2026-01",
+            "value": 80626.0
           }
         ],
         "inventories": [
@@ -213,7 +225,7 @@
           },
           {
             "period": "2025-01",
-            "value": 54490.0
+            "value": 54710.0
           },
           {
             "period": "2025-02",
@@ -257,7 +269,11 @@
           },
           {
             "period": "2025-12",
-            "value": 57670.0
+            "value": 57390.0
+          },
+          {
+            "period": "2026-01",
+            "value": 57146.0
           }
         ]
       }
@@ -280,7 +296,7 @@
           },
           {
             "period": "2025-01",
-            "value": 13777.0
+            "value": 13866.0
           },
           {
             "period": "2025-02",
@@ -324,7 +340,11 @@
           },
           {
             "period": "2025-12",
-            "value": 14331.0
+            "value": 14246.0
+          },
+          {
+            "period": "2026-01",
+            "value": 13443.0
           }
         ],
         "inventories": [
@@ -342,7 +362,7 @@
           },
           {
             "period": "2025-01",
-            "value": 28071.0
+            "value": 28128.0
           },
           {
             "period": "2025-02",
@@ -386,7 +406,11 @@
           },
           {
             "period": "2025-12",
-            "value": 28561.0
+            "value": 28594.0
+          },
+          {
+            "period": "2026-01",
+            "value": 28687.0
           }
         ]
       }
