@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-03-24T09:56:41.044215Z",
+  "fetched_at": "2026-03-25T09:55:18.542865Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -2797,10 +2797,6 @@
       "name": "Regular gas price (weekly avg)",
       "data": [
         {
-          "date": "2025-01-27",
-          "value": 3.103
-        },
-        {
           "date": "2025-02-03",
           "value": 3.082
         },
@@ -3035,11 +3031,15 @@
         {
           "date": "2026-03-16",
           "value": 3.72
+        },
+        {
+          "date": "2026-03-23",
+          "value": 3.961
         }
       ],
       "latest": {
-        "date": "2026-03-16",
-        "value": 3.72
+        "date": "2026-03-23",
+        "value": 3.961
       }
     }
   },
