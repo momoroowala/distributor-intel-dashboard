@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-03-30T10:18:15.320031Z",
+  "fetched_at": "2026-03-31T10:07:21.738456Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1853,22 +1853,6 @@
       "name": "China/US exchange rate",
       "data": [
         {
-          "date": "2025-12-29",
-          "value": 7.0056
-        },
-        {
-          "date": "2025-12-30",
-          "value": 6.9961
-        },
-        {
-          "date": "2025-12-31",
-          "value": 6.9931
-        },
-        {
-          "date": "2026-01-02",
-          "value": 6.9877
-        },
-        {
           "date": "2026-01-05",
           "value": 6.988
         },
@@ -2079,32 +2063,36 @@
         {
           "date": "2026-03-20",
           "value": 6.8857
+        },
+        {
+          "date": "2026-03-23",
+          "value": 6.8807
+        },
+        {
+          "date": "2026-03-24",
+          "value": 6.8918
+        },
+        {
+          "date": "2026-03-25",
+          "value": 6.9011
+        },
+        {
+          "date": "2026-03-26",
+          "value": 6.9107
+        },
+        {
+          "date": "2026-03-27",
+          "value": 6.9116
         }
       ],
       "latest": {
-        "date": "2026-03-20",
-        "value": 6.8857
+        "date": "2026-03-27",
+        "value": 6.9116
       }
     },
     "DEXMXUS": {
       "name": "Mexico/US exchange rate",
       "data": [
-        {
-          "date": "2025-12-29",
-          "value": 17.962
-        },
-        {
-          "date": "2025-12-30",
-          "value": 17.9474
-        },
-        {
-          "date": "2025-12-31",
-          "value": 18.0057
-        },
-        {
-          "date": "2026-01-02",
-          "value": 17.8763
-        },
         {
           "date": "2026-01-05",
           "value": 17.88
@@ -2316,32 +2304,36 @@
         {
           "date": "2026-03-20",
           "value": 17.8874
+        },
+        {
+          "date": "2026-03-23",
+          "value": 17.8134
+        },
+        {
+          "date": "2026-03-24",
+          "value": 17.8211
+        },
+        {
+          "date": "2026-03-25",
+          "value": 17.7461
+        },
+        {
+          "date": "2026-03-26",
+          "value": 17.7662
+        },
+        {
+          "date": "2026-03-27",
+          "value": 18.024
         }
       ],
       "latest": {
-        "date": "2026-03-20",
-        "value": 17.8874
+        "date": "2026-03-27",
+        "value": 18.024
       }
     },
     "DEXCAUS": {
       "name": "Canada/US exchange rate",
       "data": [
-        {
-          "date": "2025-12-29",
-          "value": 1.368
-        },
-        {
-          "date": "2025-12-30",
-          "value": 1.3678
-        },
-        {
-          "date": "2025-12-31",
-          "value": 1.3712
-        },
-        {
-          "date": "2026-01-02",
-          "value": 1.3738
-        },
         {
           "date": "2026-01-05",
           "value": 1.3757
@@ -2553,11 +2545,31 @@
         {
           "date": "2026-03-20",
           "value": 1.3731
+        },
+        {
+          "date": "2026-03-23",
+          "value": 1.3718
+        },
+        {
+          "date": "2026-03-24",
+          "value": 1.3764
+        },
+        {
+          "date": "2026-03-25",
+          "value": 1.3799
+        },
+        {
+          "date": "2026-03-26",
+          "value": 1.3849
+        },
+        {
+          "date": "2026-03-27",
+          "value": 1.388
         }
       ],
       "latest": {
-        "date": "2026-03-20",
-        "value": 1.3731
+        "date": "2026-03-27",
+        "value": 1.388
       }
     },
     "DCOILWTICO": {
