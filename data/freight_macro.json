@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-04-15T10:18:42.562339Z",
+  "fetched_at": "2026-04-16T10:18:46.739004Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -2608,22 +2608,6 @@
       "name": "Crude oil WTI price",
       "data": [
         {
-          "date": "2026-01-13",
-          "value": 60.85
-        },
-        {
-          "date": "2026-01-14",
-          "value": 61.84
-        },
-        {
-          "date": "2026-01-15",
-          "value": 59.13
-        },
-        {
-          "date": "2026-01-16",
-          "value": 59.4
-        },
-        {
           "date": "2026-01-20",
           "value": 60.3
         },
@@ -2834,11 +2818,31 @@
         {
           "date": "2026-04-06",
           "value": 114.01
+        },
+        {
+          "date": "2026-04-07",
+          "value": 114.58
+        },
+        {
+          "date": "2026-04-08",
+          "value": 96.17
+        },
+        {
+          "date": "2026-04-09",
+          "value": 99.62
+        },
+        {
+          "date": "2026-04-10",
+          "value": 98.34
+        },
+        {
+          "date": "2026-04-13",
+          "value": 100.72
         }
       ],
       "latest": {
-        "date": "2026-04-06",
-        "value": 114.01
+        "date": "2026-04-13",
+        "value": 100.72
       }
     },
     "GASREGW": {
