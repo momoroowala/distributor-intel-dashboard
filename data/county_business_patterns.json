@@ -1,7 +1,7 @@
 {
   "source": "US Census Bureau - County Business Patterns",
   "url": "https://census.gov/programs-surveys/cbp.html",
-  "fetched_at": "2026-04-16T10:18:35.686487Z",
+  "fetched_at": "2026-04-17T10:17:30.531903Z",
   "note": "CBP data has ~2 year lag. Latest available is typically 2022.",
   "industries": {
     "423": {
@@ -153,130 +153,14 @@
     },
     "424": {
       "name": "Merchant Wholesalers, Nondurable Goods",
-      "national": {
-        "establishments": 123715,
-        "employment": 2334421,
-        "annual_payroll_1000s": 191256828
-      },
-      "top_states": [
-        {
-          "state_fips": "06",
-          "state_name": "California",
-          "establishments": 21203,
-          "employment": 314509,
-          "annual_payroll_1000s": 27898958
-        },
-        {
-          "state_fips": "48",
-          "state_name": "Texas",
-          "establishments": 9164,
-          "employment": 182227,
-          "annual_payroll_1000s": 14265909
-        },
-        {
-          "state_fips": "36",
-          "state_name": "New York",
-          "establishments": 10701,
-          "employment": 150546,
-          "annual_payroll_1000s": 14742809
-        },
-        {
-          "state_fips": "12",
-          "state_name": "Florida",
-          "establishments": 9236,
-          "employment": 145492,
-          "annual_payroll_1000s": 9965861
-        },
-        {
-          "state_fips": "34",
-          "state_name": "New Jersey",
-          "establishments": 4990,
-          "employment": 129188,
-          "annual_payroll_1000s": 16085880
-        },
-        {
-          "state_fips": "17",
-          "state_name": "Illinois",
-          "establishments": 5396,
-          "employment": 120225,
-          "annual_payroll_1000s": 10855833
-        },
-        {
-          "state_fips": "42",
-          "state_name": "Pennsylvania",
-          "establishments": 3545,
-          "employment": 95979,
-          "annual_payroll_1000s": 8763560
-        },
-        {
-          "state_fips": "13",
-          "state_name": "Georgia",
-          "establishments": 3425,
-          "employment": 73129,
-          "annual_payroll_1000s": 5336875
-        },
-        {
-          "state_fips": "37",
-          "state_name": "North Carolina",
-          "establishments": 3148,
-          "employment": 70381,
-          "annual_payroll_1000s": 5379521
-        },
-        {
-          "state_fips": "39",
-          "state_name": "Ohio",
-          "establishments": 3231,
-          "employment": 69697,
-          "annual_payroll_1000s": 4760649
-        },
-        {
-          "state_fips": "25",
-          "state_name": "Massachusetts",
-          "establishments": 1992,
-          "employment": 60906,
-          "annual_payroll_1000s": 7285188
-        },
-        {
-          "state_fips": "29",
-          "state_name": "Missouri",
-          "establishments": 2095,
-          "employment": 57426,
-          "annual_payroll_1000s": 3474413
-        },
-        {
-          "state_fips": "53",
-          "state_name": "Washington",
-          "establishments": 2803,
-          "employment": 56189,
-          "annual_payroll_1000s": 4422006
-        },
-        {
-          "state_fips": "26",
-          "state_name": "Michigan",
-          "establishments": 2686,
-          "employment": 55711,
-          "annual_payroll_1000s": 4025879
-        },
-        {
-          "state_fips": "27",
-          "state_name": "Minnesota",
-          "establishments": 2255,
-          "employment": 42889,
-          "annual_payroll_1000s": 3614571
-        }
-      ],
+      "national": null,
+      "top_states": [],
       "trend": [
         {
           "establishments": 128000,
           "employment": 2381687,
           "annual_payroll_1000s": 165902214,
           "year": 2018
-        },
-        {
-          "establishments": 126042,
-          "employment": 2367720,
-          "annual_payroll_1000s": 169103106,
-          "year": 2019
         },
         {
           "establishments": 124246,
