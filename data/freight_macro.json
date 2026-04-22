@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-04-21T10:20:13.176052Z",
+  "fetched_at": "2026-04-22T10:21:34.653608Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1214,7 +1214,7 @@
         },
         {
           "date": "2025-02-01",
-          "value": 693771.0
+          "value": 691261.0
         },
         {
           "date": "2025-03-01",
@@ -1258,12 +1258,16 @@
         },
         {
           "date": "2026-01-01",
-          "value": 727498.0
+          "value": 731766.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 751874.0
         }
       ],
       "latest": {
-        "date": "2026-01-01",
-        "value": 727498.0
+        "date": "2026-02-01",
+        "value": 751874.0
       }
     },
     "WHLSLRIMSA": {
@@ -1419,7 +1423,7 @@
         },
         {
           "date": "2025-02-01",
-          "value": 903934.0
+          "value": 903141.0
         },
         {
           "date": "2025-03-01",
@@ -1463,12 +1467,16 @@
         },
         {
           "date": "2026-01-01",
-          "value": 909334.0
+          "value": 911902.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 919577.0
         }
       ],
       "latest": {
-        "date": "2026-01-01",
-        "value": 909334.0
+        "date": "2026-02-01",
+        "value": 919577.0
       }
     },
     "ISRATIO": {
@@ -1669,11 +1677,15 @@
         {
           "date": "2026-01-01",
           "value": 1.35
+        },
+        {
+          "date": "2026-02-01",
+          "value": 1.33
         }
       ],
       "latest": {
-        "date": "2026-01-01",
-        "value": 1.35
+        "date": "2026-02-01",
+        "value": 1.33
       }
     },
     "RETAILSMNSA": {
@@ -1873,12 +1885,16 @@
         },
         {
           "date": "2026-01-01",
-          "value": 582149.0
+          "value": 582287.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 563690.0
         }
       ],
       "latest": {
-        "date": "2026-01-01",
-        "value": 582149.0
+        "date": "2026-02-01",
+        "value": 563690.0
       }
     },
     "DEXCHUS": {
@@ -2861,10 +2877,6 @@
       "name": "Regular gas price (weekly avg)",
       "data": [
         {
-          "date": "2025-02-24",
-          "value": 3.125
-        },
-        {
           "date": "2025-03-03",
           "value": 3.078
         },
@@ -3099,11 +3111,15 @@
         {
           "date": "2026-04-13",
           "value": 4.123
+        },
+        {
+          "date": "2026-04-20",
+          "value": 4.044
         }
       ],
       "latest": {
-        "date": "2026-04-13",
-        "value": 4.123
+        "date": "2026-04-20",
+        "value": 4.044
       }
     }
   },
