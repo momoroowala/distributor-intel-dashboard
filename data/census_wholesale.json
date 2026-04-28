@@ -2,7 +2,7 @@
   "source": "US Census Bureau - Monthly Wholesale Trade Survey",
   "url": "https://census.gov/wholesale/",
   "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
-  "fetched_at": "2026-04-27T11:03:34.088789Z",
+  "fetched_at": "2026-04-28T11:05:51.893080Z",
   "categories": {
     "42": {
       "name": "Total Wholesale Trade",
@@ -41,8 +41,8 @@
             "value": 710559.0
           },
           {
-            "period": "2025-07",
-            "value": 710559.0
+            "period": "2025-08",
+            "value": 709361.0
           },
           {
             "period": "2025-08",
@@ -107,8 +107,8 @@
             "value": 908006.0
           },
           {
-            "period": "2025-07",
-            "value": 908006.0
+            "period": "2025-08",
+            "value": 907383.0
           },
           {
             "period": "2025-08",
@@ -178,8 +178,8 @@
             "value": 79685.0
           },
           {
-            "period": "2025-07",
-            "value": 79685.0
+            "period": "2025-08",
+            "value": 81131.0
           },
           {
             "period": "2025-08",
@@ -244,8 +244,8 @@
             "value": 57856.0
           },
           {
-            "period": "2025-07",
-            "value": 57856.0
+            "period": "2025-08",
+            "value": 58200.0
           },
           {
             "period": "2025-08",
@@ -315,8 +315,8 @@
             "value": 13885.0
           },
           {
-            "period": "2025-07",
-            "value": 13885.0
+            "period": "2025-08",
+            "value": 13169.0
           },
           {
             "period": "2025-08",
@@ -381,8 +381,8 @@
             "value": 28418.0
           },
           {
-            "period": "2025-07",
-            "value": 28418.0
+            "period": "2025-08",
+            "value": 28493.0
           },
           {
             "period": "2025-08",
