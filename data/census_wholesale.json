@@ -2,7 +2,7 @@
   "source": "US Census Bureau - Monthly Wholesale Trade Survey",
   "url": "https://census.gov/wholesale/",
   "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
-  "fetched_at": "2026-04-28T11:05:51.893080Z",
+  "fetched_at": "2026-04-29T10:57:25.540553Z",
   "categories": {
     "42": {
       "name": "Total Wholesale Trade",
@@ -45,12 +45,12 @@
             "value": 709361.0
           },
           {
-            "period": "2025-08",
-            "value": 709361.0
-          },
-          {
             "period": "2025-09",
             "value": 707774.0
+          },
+          {
+            "period": "2025-10",
+            "value": 704727.0
           },
           {
             "period": "2025-10",
@@ -111,12 +111,12 @@
             "value": 907383.0
           },
           {
-            "period": "2025-08",
-            "value": 907383.0
-          },
-          {
             "period": "2025-09",
             "value": 911532.0
+          },
+          {
+            "period": "2025-10",
+            "value": 913477.0
           },
           {
             "period": "2025-10",
@@ -182,12 +182,12 @@
             "value": 81131.0
           },
           {
-            "period": "2025-08",
-            "value": 81131.0
-          },
-          {
             "period": "2025-09",
             "value": 80662.0
+          },
+          {
+            "period": "2025-10",
+            "value": 80338.0
           },
           {
             "period": "2025-10",
@@ -248,12 +248,12 @@
             "value": 58200.0
           },
           {
-            "period": "2025-08",
-            "value": 58200.0
-          },
-          {
             "period": "2025-09",
             "value": 58609.0
+          },
+          {
+            "period": "2025-10",
+            "value": 58632.0
           },
           {
             "period": "2025-10",
@@ -319,12 +319,12 @@
             "value": 13169.0
           },
           {
-            "period": "2025-08",
-            "value": 13169.0
-          },
-          {
             "period": "2025-09",
             "value": 13907.0
+          },
+          {
+            "period": "2025-10",
+            "value": 13860.0
           },
           {
             "period": "2025-10",
@@ -385,12 +385,12 @@
             "value": 28493.0
           },
           {
-            "period": "2025-08",
-            "value": 28493.0
-          },
-          {
             "period": "2025-09",
             "value": 28252.0
+          },
+          {
+            "period": "2025-10",
+            "value": 28158.0
           },
           {
             "period": "2025-10",
