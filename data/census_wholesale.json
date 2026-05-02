@@ -2,7 +2,7 @@
   "source": "US Census Bureau - Monthly Wholesale Trade Survey",
   "url": "https://census.gov/wholesale/",
   "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
-  "fetched_at": "2026-05-01T10:24:11.325556Z",
+  "fetched_at": "2026-05-02T10:00:22.084860Z",
   "categories": {
     "42": {
       "name": "Total Wholesale Trade",
@@ -65,8 +65,8 @@
             "value": 731766.0
           },
           {
-            "period": "2026-01",
-            "value": 731766.0
+            "period": "2026-02",
+            "value": 751874.0
           }
         ],
         "inventories": [
@@ -127,8 +127,8 @@
             "value": 911902.0
           },
           {
-            "period": "2026-01",
-            "value": 911902.0
+            "period": "2026-02",
+            "value": 919577.0
           }
         ]
       }
@@ -194,8 +194,8 @@
             "value": 80722.0
           },
           {
-            "period": "2026-01",
-            "value": 80722.0
+            "period": "2026-02",
+            "value": 80883.0
           }
         ],
         "inventories": [
@@ -256,8 +256,8 @@
             "value": 57096.0
           },
           {
-            "period": "2026-01",
-            "value": 57096.0
+            "period": "2026-02",
+            "value": 57010.0
           }
         ]
       }
@@ -323,8 +323,8 @@
             "value": 13380.0
           },
           {
-            "period": "2026-01",
-            "value": 13380.0
+            "period": "2026-02",
+            "value": 13903.0
           }
         ],
         "inventories": [
@@ -385,8 +385,8 @@
             "value": 28781.0
           },
           {
-            "period": "2026-01",
-            "value": 28781.0
+            "period": "2026-02",
+            "value": 28918.0
           }
         ]
       }
