@@ -1,7 +1,7 @@
 {
   "source": "BLS - PPI, CES, QCEW",
   "url": "https://data.bls.gov/cew/",
-  "fetched_at": "2026-05-08T10:25:59.360749Z",
+  "fetched_at": "2026-05-09T10:07:05.280377Z",
   "ppi_wholesale": {
     "WPU00000000": {
       "name": "All commodities PPI",
@@ -2595,13 +2595,18 @@
         },
         {
           "period": "2026-02",
-          "value": 6051.3,
-          "net_change_12m": -24.6
+          "value": 6053.0,
+          "net_change_12m": -22.9
         },
         {
           "period": "2026-03",
-          "value": 6054.6,
-          "net_change_12m": -7.4
+          "value": 6059.5,
+          "net_change_12m": -2.5
+        },
+        {
+          "period": "2026-04",
+          "value": 6065.5,
+          "net_change_12m": -1.4
         }
       ]
     },
@@ -2860,8 +2865,13 @@
         },
         {
           "period": "2026-03",
-          "value": 39.72,
-          "net_change_12m": 1.42
+          "value": 39.74,
+          "net_change_12m": 1.44
+        },
+        {
+          "period": "2026-04",
+          "value": 39.84,
+          "net_change_12m": 1.39
         }
       ]
     },
@@ -3115,13 +3125,18 @@
         },
         {
           "period": "2026-02",
-          "value": 32.95,
-          "net_change_12m": 1.15
+          "value": 32.97,
+          "net_change_12m": 1.17
         },
         {
           "period": "2026-03",
-          "value": 33.0,
-          "net_change_12m": 1.15
+          "value": 33.18,
+          "net_change_12m": 1.33
+        },
+        {
+          "period": "2026-04",
+          "value": 33.35,
+          "net_change_12m": 1.45
         }
       ]
     },
@@ -3380,8 +3395,13 @@
         },
         {
           "period": "2026-03",
-          "value": 1557.02,
-          "net_change_12m": 55.66
+          "value": 1557.81,
+          "net_change_12m": 56.45
+        },
+        {
+          "period": "2026-04",
+          "value": 1561.73,
+          "net_change_12m": 50.64
         }
       ]
     }
