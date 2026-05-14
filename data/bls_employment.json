@@ -1,7 +1,7 @@
 {
   "source": "BLS - PPI, CES, QCEW",
   "url": "https://data.bls.gov/cew/",
-  "fetched_at": "2026-05-13T11:29:01.311151Z",
+  "fetched_at": "2026-05-14T11:12:28.576261Z",
   "ppi_wholesale": {
     "WPU00000000": {
       "name": "All commodities PPI",
@@ -243,23 +243,28 @@
         },
         {
           "period": "2025-12",
-          "value": 261.349,
+          "value": 261.333,
           "pct_change_12m": 3.1
         },
         {
           "period": "2026-01",
-          "value": 263.485,
+          "value": 263.537,
           "pct_change_12m": 2.4
         },
         {
           "period": "2026-02",
-          "value": 269.296,
-          "pct_change_12m": 3.8
+          "value": 269.909,
+          "pct_change_12m": 4.0
         },
         {
           "period": "2026-03",
-          "value": 274.102,
-          "pct_change_12m": 6.0
+          "value": 276.42,
+          "pct_change_12m": 6.9
+        },
+        {
+          "period": "2026-04",
+          "value": 283.764,
+          "pct_change_12m": 9.8
         }
       ]
     },
@@ -513,13 +518,18 @@
         },
         {
           "period": "2026-02",
-          "value": 241.585,
-          "pct_change_12m": -4.7
+          "value": 244.198,
+          "pct_change_12m": -3.6
         },
         {
           "period": "2026-03",
-          "value": 239.297,
-          "pct_change_12m": -0.8
+          "value": 242.498,
+          "pct_change_12m": 0.6
+        },
+        {
+          "period": "2026-04",
+          "value": 245.674,
+          "pct_change_12m": 4.4
         }
       ]
     },
@@ -763,22 +773,27 @@
         },
         {
           "period": "2025-12",
-          "value": 273.121,
+          "value": 273.059,
           "pct_change_12m": 2.0
         },
         {
           "period": "2026-01",
-          "value": 273.361,
+          "value": 273.356,
           "pct_change_12m": 1.7
         },
         {
           "period": "2026-02",
-          "value": 274.207,
-          "pct_change_12m": 1.3
+          "value": 273.918,
+          "pct_change_12m": 1.2
         },
         {
           "period": "2026-03",
-          "value": 276.59,
+          "value": 275.403,
+          "pct_change_12m": 1.7
+        },
+        {
+          "period": "2026-04",
+          "value": 277.588,
           "pct_change_12m": 2.1
         }
       ]
@@ -1023,23 +1038,28 @@
         },
         {
           "period": "2025-12",
-          "value": 191.791,
-          "pct_change_12m": 3.6
+          "value": 192.087,
+          "pct_change_12m": 3.8
         },
         {
           "period": "2026-01",
-          "value": 191.888,
-          "pct_change_12m": 3.0
+          "value": 192.227,
+          "pct_change_12m": 3.2
         },
         {
           "period": "2026-02",
-          "value": 192.949,
-          "pct_change_12m": 3.9
+          "value": 193.235,
+          "pct_change_12m": 4.1
         },
         {
           "period": "2026-03",
-          "value": 192.857,
-          "pct_change_12m": 3.8
+          "value": 193.366,
+          "pct_change_12m": 4.1
+        },
+        {
+          "period": "2026-04",
+          "value": 193.442,
+          "pct_change_12m": 3.7
         }
       ]
     },
@@ -1283,23 +1303,28 @@
         },
         {
           "period": "2025-12",
-          "value": 347.625,
+          "value": 347.637,
           "pct_change_12m": 0.6
         },
         {
           "period": "2026-01",
-          "value": 347.806,
+          "value": 347.791,
           "pct_change_12m": -0.3
         },
         {
           "period": "2026-02",
-          "value": 349.879,
+          "value": 350.028,
           "pct_change_12m": 0.0
         },
         {
           "period": "2026-03",
-          "value": 354.18,
-          "pct_change_12m": 1.1
+          "value": 355.038,
+          "pct_change_12m": 1.3
+        },
+        {
+          "period": "2026-04",
+          "value": 363.294,
+          "pct_change_12m": 4.0
         }
       ]
     },
@@ -1548,18 +1573,23 @@
         },
         {
           "period": "2026-01",
-          "value": 256.305,
+          "value": 256.196,
           "pct_change_12m": 0.6
         },
         {
           "period": "2026-02",
-          "value": 256.576,
+          "value": 256.45,
           "pct_change_12m": 1.1
         },
         {
           "period": "2026-03",
-          "value": 257.746,
-          "pct_change_12m": 1.1
+          "value": 257.016,
+          "pct_change_12m": 0.8
+        },
+        {
+          "period": "2026-04",
+          "value": 261.337,
+          "pct_change_12m": 2.4
         }
       ]
     },
@@ -1803,23 +1833,28 @@
         },
         {
           "period": "2025-12",
-          "value": 298.192,
+          "value": 298.016,
           "pct_change_12m": -0.4
         },
         {
           "period": "2026-01",
-          "value": 299.348,
-          "pct_change_12m": 0.1
+          "value": 299.615,
+          "pct_change_12m": 0.2
         },
         {
           "period": "2026-02",
-          "value": 301.217,
-          "pct_change_12m": 0.1
+          "value": 302.309,
+          "pct_change_12m": 0.5
         },
         {
           "period": "2026-03",
-          "value": 302.028,
-          "pct_change_12m": -0.3
+          "value": 303.025,
+          "pct_change_12m": 0.0
+        },
+        {
+          "period": "2026-04",
+          "value": 307.795,
+          "pct_change_12m": 1.8
         }
       ]
     },
@@ -2063,23 +2098,28 @@
         },
         {
           "period": "2025-12",
-          "value": 343.596,
+          "value": 343.713,
           "pct_change_12m": 1.4
         },
         {
           "period": "2026-01",
-          "value": 343.997,
+          "value": 344.111,
           "pct_change_12m": 1.4
         },
         {
           "period": "2026-02",
-          "value": 344.836,
-          "pct_change_12m": 1.3
+          "value": 345.148,
+          "pct_change_12m": 1.4
         },
         {
           "period": "2026-03",
-          "value": 345.477,
-          "pct_change_12m": 1.2
+          "value": 345.855,
+          "pct_change_12m": 1.3
+        },
+        {
+          "period": "2026-04",
+          "value": 347.765,
+          "pct_change_12m": 1.4
         }
       ]
     },
@@ -2328,18 +2368,23 @@
         },
         {
           "period": "2026-01",
-          "value": 362.207,
-          "pct_change_12m": 18.0
+          "value": 362.466,
+          "pct_change_12m": 18.1
         },
         {
           "period": "2026-02",
-          "value": 367.501,
+          "value": 367.496,
           "pct_change_12m": 17.8
         },
         {
           "period": "2026-03",
-          "value": 370.936,
-          "pct_change_12m": 15.7
+          "value": 371.912,
+          "pct_change_12m": 16.0
+        },
+        {
+          "period": "2026-04",
+          "value": 374.695,
+          "pct_change_12m": 15.2
         }
       ]
     }

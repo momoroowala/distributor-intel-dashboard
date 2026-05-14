@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-05-13T11:29:05.027860Z",
+  "fetched_at": "2026-05-14T11:12:31.622111Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -199,24 +199,28 @@
         },
         {
           "date": "2025-12-01",
-          "value": 284.263
+          "value": 284.275
         },
         {
           "date": "2026-01-01",
-          "value": 279.706
+          "value": 279.755
         },
         {
           "date": "2026-02-01",
-          "value": 286.402
+          "value": 286.19
         },
         {
           "date": "2026-03-01",
-          "value": 286.102
+          "value": 285.03
+        },
+        {
+          "date": "2026-04-01",
+          "value": 285.799
         }
       ],
       "latest": {
-        "date": "2026-03-01",
-        "value": 286.102
+        "date": "2026-04-01",
+        "value": 285.799
       }
     },
     "WPUFD4112": {
@@ -412,24 +416,28 @@
         },
         {
           "date": "2025-12-01",
-          "value": 167.165
+          "value": 167.109
         },
         {
           "date": "2026-01-01",
-          "value": 167.209
+          "value": 167.134
         },
         {
           "date": "2026-02-01",
-          "value": 168.055
+          "value": 167.786
         },
         {
           "date": "2026-03-01",
-          "value": 170.077
+          "value": 168.704
+        },
+        {
+          "date": "2026-04-01",
+          "value": 170.183
         }
       ],
       "latest": {
-        "date": "2026-03-01",
-        "value": 170.077
+        "date": "2026-04-01",
+        "value": 170.183
       }
     },
     "RAILFRTCARLOADSD11": {
@@ -838,20 +846,24 @@
         },
         {
           "date": "2026-01-01",
-          "value": 168.127
+          "value": 166.939
         },
         {
           "date": "2026-02-01",
-          "value": 168.354
+          "value": 168.357
         },
         {
           "date": "2026-03-01",
-          "value": 170.373
+          "value": 171.171
+        },
+        {
+          "date": "2026-04-01",
+          "value": 179.903
         }
       ],
       "latest": {
-        "date": "2026-03-01",
-        "value": 170.373
+        "date": "2026-04-01",
+        "value": 179.903
       }
     },
     "DFXARC1M027SBEA": {
@@ -2644,22 +2656,6 @@
       "name": "Crude oil WTI price",
       "data": [
         {
-          "date": "2026-02-10",
-          "value": 64.2
-        },
-        {
-          "date": "2026-02-11",
-          "value": 64.8
-        },
-        {
-          "date": "2026-02-12",
-          "value": 63.08
-        },
-        {
-          "date": "2026-02-13",
-          "value": 63.05
-        },
-        {
           "date": "2026-02-17",
           "value": 62.53
         },
@@ -2874,11 +2870,31 @@
         {
           "date": "2026-05-04",
           "value": 109.76
+        },
+        {
+          "date": "2026-05-05",
+          "value": 105.66
+        },
+        {
+          "date": "2026-05-06",
+          "value": 98.75
+        },
+        {
+          "date": "2026-05-07",
+          "value": 98.38
+        },
+        {
+          "date": "2026-05-08",
+          "value": 98.87
+        },
+        {
+          "date": "2026-05-11",
+          "value": 101.56
         }
       ],
       "latest": {
-        "date": "2026-05-04",
-        "value": 109.76
+        "date": "2026-05-11",
+        "value": 101.56
       }
     },
     "GASREGW": {
