@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-05-28T12:27:30.090050Z",
+  "fetched_at": "2026-05-29T12:12:27.244746Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1067,16 +1067,20 @@
         },
         {
           "date": "2026-02-01",
-          "value": 1540.9
+          "value": 1543.7
         },
         {
           "date": "2026-03-01",
-          "value": 1547.8
+          "value": 1553.3
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1562.8
         }
       ],
       "latest": {
-        "date": "2026-03-01",
-        "value": 1547.8
+        "date": "2026-04-01",
+        "value": 1562.8
       }
     }
   },
@@ -2684,30 +2688,6 @@
       "name": "Crude oil WTI price",
       "data": [
         {
-          "date": "2026-02-24",
-          "value": 65.62
-        },
-        {
-          "date": "2026-02-25",
-          "value": 65.3
-        },
-        {
-          "date": "2026-02-26",
-          "value": 65.1
-        },
-        {
-          "date": "2026-02-27",
-          "value": 66.96
-        },
-        {
-          "date": "2026-03-02",
-          "value": 71.13
-        },
-        {
-          "date": "2026-03-03",
-          "value": 74.48
-        },
-        {
           "date": "2026-03-04",
           "value": 74.58
         },
@@ -2918,11 +2898,31 @@
         {
           "date": "2026-05-18",
           "value": 112.25
+        },
+        {
+          "date": "2026-05-19",
+          "value": 112.09
+        },
+        {
+          "date": "2026-05-20",
+          "value": 101.69
+        },
+        {
+          "date": "2026-05-21",
+          "value": 100.2
+        },
+        {
+          "date": "2026-05-22",
+          "value": 100.35
+        },
+        {
+          "date": "2026-05-26",
+          "value": 97.63
         }
       ],
       "latest": {
-        "date": "2026-05-18",
-        "value": 112.25
+        "date": "2026-05-26",
+        "value": 97.63
       }
     },
     "GASREGW": {
