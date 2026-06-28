@@ -1,4 +1,5 @@
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react'
+import { motion, useReducedMotion } from 'framer-motion'
 
 export default function MetricCard({ title, value, change, changeLabel, icon: Icon, prefix = '', suffix = '' }) {
   const isPositive = change > 0
@@ -6,9 +7,16 @@ export default function MetricCard({ title, value, change, changeLabel, icon: Ic
   const TrendIcon = isPositive ? TrendingUp : isNeutral ? Minus : TrendingDown
   const changeColor = isPositive ? 'text-green-400' : isNeutral ? 'text-gray-400' : 'text-red-400'
   const changeBg = isPositive ? 'bg-green-400/10' : isNeutral ? 'bg-gray-400/10' : 'bg-red-400/10'
+  const reduceMotion = useReducedMotion()
 
   return (
-    <div className="bg-[#1a1d2e] rounded-xl p-5 border border-[#2a2d3e] hover:border-[#7c4dff]/30 transition-all animate-fade-in">
+    <motion.div
+      initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-40px' }}
+      whileHover={reduceMotion ? undefined : { y: -3 }}
+      transition={{ duration: 0.35, ease: 'easeOut' }}
+      className="bg-[#1a1d2e] rounded-xl p-5 border border-[#2a2d3e] hover:border-[#7c4dff]/30 transition-colors">
       <div className="flex items-start justify-between mb-3">
         <p className="text-[#9ca3af] text-sm font-medium">{title}</p>
         {Icon && (
@@ -29,6 +37,6 @@ export default function MetricCard({ title, value, change, changeLabel, icon: Ic
           {changeLabel && <span className="text-[#9ca3af] text-xs">{changeLabel}</span>}
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }

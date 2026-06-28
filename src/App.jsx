@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import {
   Star, TrendingUp, Truck, Shield, Package, Building2, MapPin, Target,
   Home as HomeIcon, Phone, X, ArrowRight,
@@ -24,6 +25,35 @@ const sectionLabel = (label) => (
     {label}
   </div>
 );
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  const reduceMotion = useReducedMotion();
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.pathname}
+        initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -8 }}
+        transition={{ duration: 0.25, ease: 'easeOut' }}
+      >
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/customer-scanner" element={<CustomerHealthScanner />} />
+          <Route path="/market" element={<MarketOverview />} />
+          <Route path="/food-beverage" element={<FoodBeverage />} />
+          <Route path="/regional" element={<RegionalAnalysis />} />
+          <Route path="/freight" element={<FreightSupplyChain />} />
+          <Route path="/trade" element={<TradeTariffs />} />
+          <Route path="/industry" element={<IndustryDeepDive />} />
+          <Route path="/threats" element={<ThreatIntel />} />
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
 
 function App() {
   const [showBanner, setShowBanner] = useState(true);
@@ -145,17 +175,7 @@ function App() {
           )}
 
           <div className="max-w-7xl mx-auto p-4 md:p-8">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/customer-scanner" element={<CustomerHealthScanner />} />
-              <Route path="/market" element={<MarketOverview />} />
-              <Route path="/food-beverage" element={<FoodBeverage />} />
-              <Route path="/regional" element={<RegionalAnalysis />} />
-              <Route path="/freight" element={<FreightSupplyChain />} />
-              <Route path="/trade" element={<TradeTariffs />} />
-              <Route path="/industry" element={<IndustryDeepDive />} />
-              <Route path="/threats" element={<ThreatIntel />} />
-            </Routes>
+            <AnimatedRoutes />
           </div>
         </main>
       </div>

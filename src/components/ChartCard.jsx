@@ -1,6 +1,15 @@
+import { motion, useReducedMotion } from 'framer-motion'
+
 export default function ChartCard({ title, subtitle, children, className = '' }) {
+  const reduceMotion = useReducedMotion()
   return (
-    <div className={`bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] overflow-hidden animate-fade-in ${className}`}>
+    <motion.div
+      initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      className={`bg-[#1a1d2e] rounded-xl border border-[#2a2d3e] overflow-hidden ${className}`}
+    >
       <div className="px-5 pt-5 pb-2">
         <h3 className="text-white font-semibold text-base">{title}</h3>
         {subtitle && <p className="text-[#9ca3af] text-xs mt-1">{subtitle}</p>}
@@ -8,6 +17,6 @@ export default function ChartCard({ title, subtitle, children, className = '' })
       <div className="px-2 pb-4">
         {children}
       </div>
-    </div>
+    </motion.div>
   )
 }
