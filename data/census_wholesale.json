@@ -2,7 +2,7 @@
   "source": "US Census Bureau - Monthly Wholesale Trade Survey",
   "url": "https://census.gov/wholesale/",
   "note": "NAICS-level detail. See freight_macro.json for aggregate wholesale data from FRED.",
-  "fetched_at": "2026-07-05T11:02:17.237087Z",
+  "fetched_at": "2026-07-06T12:42:15.215646Z",
   "categories": {
     "42": {
       "name": "Total Wholesale Trade",
