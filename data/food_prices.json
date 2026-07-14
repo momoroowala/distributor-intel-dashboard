@@ -4,7 +4,7 @@
     "https://ers.usda.gov/data-products/food-price-outlook",
     "https://api.bls.gov/publicAPI/v2/timeseries/data/"
   ],
-  "fetched_at": "2026-07-13T11:57:50.559584Z",
+  "fetched_at": "2026-07-14T10:42:02.326359Z",
   "bls_food_cpi": {
     "CUSR0000SAF": {
       "name": "Food at home",
@@ -1450,35 +1450,35 @@
           "month": 1,
           "period": "2026-01",
           "value": 356.102,
-          "pct_change_12m": 0.9
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 2,
           "period": "2026-02",
           "value": 360.989,
-          "pct_change_12m": 2.7
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 3,
           "period": "2026-03",
           "value": 364.68,
-          "pct_change_12m": 3.9
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 4,
           "period": "2026-04",
           "value": 371.403,
-          "pct_change_12m": 6.1
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 5,
           "period": "2026-05",
           "value": 372.158,
-          "pct_change_12m": 6.0
+          "pct_change_12m": null
         }
       ]
     },
@@ -1819,35 +1819,35 @@
           "month": 1,
           "period": "2026-01",
           "value": 234.414,
-          "pct_change_12m": 4.5
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 2,
           "period": "2026-02",
           "value": 236.373,
-          "pct_change_12m": 5.6
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 3,
           "period": "2026-03",
           "value": 235.608,
-          "pct_change_12m": 4.7
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 4,
           "period": "2026-04",
           "value": 238.183,
-          "pct_change_12m": 5.1
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 5,
           "period": "2026-05",
           "value": 239.566,
-          "pct_change_12m": 5.8
+          "pct_change_12m": null
         }
       ]
     },
@@ -2188,35 +2188,35 @@
           "month": 1,
           "period": "2026-01",
           "value": 280.566,
-          "pct_change_12m": 2.1
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 2,
           "period": "2026-02",
           "value": 282.768,
-          "pct_change_12m": 3.3
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 3,
           "period": "2026-03",
           "value": 282.725,
-          "pct_change_12m": 2.9
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 4,
           "period": "2026-04",
           "value": 281.476,
-          "pct_change_12m": 2.5
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 5,
           "period": "2026-05",
           "value": 281.546,
-          "pct_change_12m": 2.0
+          "pct_change_12m": null
         }
       ]
     },
@@ -2557,35 +2557,35 @@
           "month": 1,
           "period": "2026-01",
           "value": 298.623,
-          "pct_change_12m": 2.0
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 2,
           "period": "2026-02",
           "value": 298.95,
-          "pct_change_12m": 1.6
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 3,
           "period": "2026-03",
           "value": 299.718,
-          "pct_change_12m": 1.7
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 4,
           "period": "2026-04",
           "value": 300.555,
-          "pct_change_12m": 1.9
+          "pct_change_12m": null
         },
         {
           "year": 2026,
           "month": 5,
           "period": "2026-05",
           "value": 300.726,
-          "pct_change_12m": 2.1
+          "pct_change_12m": null
         }
       ]
     },
