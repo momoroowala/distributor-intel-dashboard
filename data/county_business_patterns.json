@@ -1,7 +1,7 @@
 {
   "source": "US Census Bureau - County Business Patterns",
   "url": "https://census.gov/programs-surveys/cbp.html",
-  "fetched_at": "2026-08-08T09:33:03.227069Z",
+  "fetched_at": "2026-08-09T09:34:14.202591Z",
   "note": "CBP data has ~2 year lag. Latest available is typically 2022.",
   "industries": {
     "423": {
