@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-08-13T09:59:48.042610Z",
+  "fetched_at": "2026-08-14T09:56:30.543379Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -211,24 +211,28 @@
         },
         {
           "date": "2026-03-01",
-          "value": 285.214
+          "value": 285.147
         },
         {
           "date": "2026-04-01",
-          "value": 286.097
+          "value": 286.033
         },
         {
           "date": "2026-05-01",
-          "value": 287.341
+          "value": 287.329
         },
         {
           "date": "2026-06-01",
-          "value": 287.02
+          "value": 287.1
+        },
+        {
+          "date": "2026-07-01",
+          "value": 283.803
         }
       ],
       "latest": {
-        "date": "2026-06-01",
-        "value": 287.02
+        "date": "2026-07-01",
+        "value": 283.803
       }
     },
     "WPUFD4112": {
@@ -436,24 +440,28 @@
         },
         {
           "date": "2026-03-01",
-          "value": 168.776
+          "value": 168.758
         },
         {
           "date": "2026-04-01",
-          "value": 170.328
+          "value": 170.294
         },
         {
           "date": "2026-05-01",
-          "value": 170.231
+          "value": 170.182
         },
         {
           "date": "2026-06-01",
-          "value": 171.375
+          "value": 171.679
+        },
+        {
+          "date": "2026-07-01",
+          "value": 170.119
         }
       ],
       "latest": {
-        "date": "2026-06-01",
-        "value": 171.375
+        "date": "2026-07-01",
+        "value": 170.119
       }
     },
     "RAILFRTCARLOADSD11": {
@@ -882,24 +890,28 @@
         },
         {
           "date": "2026-03-01",
-          "value": 171.592
+          "value": 171.642
         },
         {
           "date": "2026-04-01",
-          "value": 178.326
+          "value": 178.395
         },
         {
           "date": "2026-05-01",
-          "value": 180.448
+          "value": 180.616
         },
         {
           "date": "2026-06-01",
-          "value": 181.567
+          "value": 180.765
+        },
+        {
+          "date": "2026-07-01",
+          "value": 177.058
         }
       ],
       "latest": {
-        "date": "2026-06-01",
-        "value": 181.567
+        "date": "2026-07-01",
+        "value": 177.058
       }
     },
     "DFXARC1M027SBEA": {
