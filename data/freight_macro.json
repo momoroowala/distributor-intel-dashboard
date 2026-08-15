@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-08-14T09:56:30.543379Z",
+  "fetched_at": "2026-08-15T09:20:59.402836Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1310,7 +1310,7 @@
         },
         {
           "date": "2025-06-01",
-          "value": 701297.0
+          "value": 696018.0
         },
         {
           "date": "2025-07-01",
@@ -1354,12 +1354,16 @@
         },
         {
           "date": "2026-05-01",
-          "value": 817407.0
+          "value": 818652.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 794101.0
         }
       ],
       "latest": {
-        "date": "2026-05-01",
-        "value": 817407.0
+        "date": "2026-06-01",
+        "value": 794101.0
       }
     },
     "WHLSLRIMSA": {
@@ -1531,7 +1535,7 @@
         },
         {
           "date": "2025-06-01",
-          "value": 906960.0
+          "value": 906639.0
         },
         {
           "date": "2025-07-01",
@@ -1575,12 +1579,16 @@
         },
         {
           "date": "2026-05-01",
-          "value": 941760.0
+          "value": 943113.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 944710.0
         }
       ],
       "latest": {
-        "date": "2026-05-01",
-        "value": 941760.0
+        "date": "2026-06-01",
+        "value": 944710.0
       }
     },
     "ISRATIO": {
@@ -1752,7 +1760,7 @@
         },
         {
           "date": "2025-06-01",
-          "value": 1.38
+          "value": 1.39
         },
         {
           "date": "2025-07-01",
@@ -1797,11 +1805,15 @@
         {
           "date": "2026-05-01",
           "value": 1.28
+        },
+        {
+          "date": "2026-06-01",
+          "value": 1.3
         }
       ],
       "latest": {
-        "date": "2026-05-01",
-        "value": 1.28
+        "date": "2026-06-01",
+        "value": 1.3
       }
     },
     "RETAILSMNSA": {
@@ -2017,12 +2029,16 @@
         },
         {
           "date": "2026-05-01",
-          "value": 685407.0
+          "value": 685550.0
+        },
+        {
+          "date": "2026-06-01",
+          "value": 672357.0
         }
       ],
       "latest": {
-        "date": "2026-05-01",
-        "value": 685407.0
+        "date": "2026-06-01",
+        "value": 672357.0
       }
     },
     "DEXCHUS": {
