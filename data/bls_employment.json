@@ -1,7 +1,7 @@
 {
   "source": "BLS - PPI, CES, QCEW",
   "url": "https://data.bls.gov/cew/",
-  "fetched_at": "2026-09-03T13:15:06.297541Z",
+  "fetched_at": "2026-09-04T13:09:03.828059Z",
   "ppi_wholesale": {
     "WPU00000000": {
       "name": "All commodities PPI",
@@ -2795,13 +2795,18 @@
         },
         {
           "period": "2026-06",
-          "value": 6057.7,
-          "net_change_12m": 0.4
+          "value": 6059.0,
+          "net_change_12m": 1.7
         },
         {
           "period": "2026-07",
-          "value": 6062.4,
-          "net_change_12m": 10.8
+          "value": 6064.3,
+          "net_change_12m": 12.7
+        },
+        {
+          "period": "2026-08",
+          "value": 6072.1,
+          "net_change_12m": 29.1
         }
       ]
     },
@@ -3075,13 +3080,18 @@
         },
         {
           "period": "2026-06",
-          "value": 39.79,
-          "net_change_12m": 1.14
+          "value": 39.75,
+          "net_change_12m": 1.1
         },
         {
           "period": "2026-07",
-          "value": 39.88,
-          "net_change_12m": 1.03
+          "value": 39.83,
+          "net_change_12m": 0.98
+        },
+        {
+          "period": "2026-08",
+          "value": 39.95,
+          "net_change_12m": 0.98
         }
       ]
     },
@@ -3355,13 +3365,18 @@
         },
         {
           "period": "2026-06",
-          "value": 33.21,
-          "net_change_12m": 1.0
+          "value": 33.2,
+          "net_change_12m": 0.99
         },
         {
           "period": "2026-07",
-          "value": 33.25,
-          "net_change_12m": 0.85
+          "value": 33.27,
+          "net_change_12m": 0.87
+        },
+        {
+          "period": "2026-08",
+          "value": 33.3,
+          "net_change_12m": 0.77
         }
       ]
     },
@@ -3635,13 +3650,18 @@
         },
         {
           "period": "2026-06",
-          "value": 1567.73,
-          "net_change_12m": 56.51
+          "value": 1566.15,
+          "net_change_12m": 54.93
         },
         {
           "period": "2026-07",
-          "value": 1571.27,
-          "net_change_12m": 52.23
+          "value": 1569.3,
+          "net_change_12m": 50.26
+        },
+        {
+          "period": "2026-08",
+          "value": 1574.03,
+          "net_change_12m": 50.3
         }
       ]
     }
