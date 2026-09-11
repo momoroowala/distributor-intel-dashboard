@@ -4,7 +4,7 @@
     "https://ers.usda.gov/data-products/food-price-outlook",
     "https://api.bls.gov/publicAPI/v2/timeseries/data/"
   ],
-  "fetched_at": "2026-09-10T13:18:03.695697Z",
+  "fetched_at": "2026-09-11T13:11:35.798402Z",
   "bls_food_cpi": {
     "CUSR0000SAF": {
       "name": "Food at home",
@@ -386,6 +386,13 @@
           "period": "2026-07",
           "value": 346.681,
           "pct_change_12m": 2.9
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 347.104,
+          "pct_change_12m": 2.6
         }
       ]
     },
@@ -769,6 +776,13 @@
           "period": "2026-07",
           "value": 321.216,
           "pct_change_12m": 2.6
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 321.335,
+          "pct_change_12m": 2.1
         }
       ]
     },
@@ -1152,6 +1166,13 @@
           "period": "2026-07",
           "value": 349.598,
           "pct_change_12m": 1.6
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 349.99,
+          "pct_change_12m": 0.9
         }
       ]
     },
@@ -1535,6 +1556,13 @@
           "period": "2026-07",
           "value": 370.752,
           "pct_change_12m": 5.0
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 369.15,
+          "pct_change_12m": 3.2
         }
       ]
     },
@@ -1918,6 +1946,13 @@
           "period": "2026-07",
           "value": 237.931,
           "pct_change_12m": 4.1
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 238.368,
+          "pct_change_12m": 3.7
         }
       ]
     },
@@ -2301,6 +2336,13 @@
           "period": "2026-07",
           "value": 282.75,
           "pct_change_12m": 2.5
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 283.018,
+          "pct_change_12m": 2.4
         }
       ]
     },
@@ -2684,6 +2726,13 @@
           "period": "2026-07",
           "value": 301.367,
           "pct_change_12m": 2.1
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 301.724,
+          "pct_change_12m": 1.6
         }
       ]
     },
@@ -3066,6 +3115,13 @@
           "month": 7,
           "period": "2026-07",
           "value": 396.859,
+          "pct_change_12m": 3.4
+        },
+        {
+          "year": 2026,
+          "month": 8,
+          "period": "2026-08",
+          "value": 397.868,
           "pct_change_12m": 3.4
         }
       ]
