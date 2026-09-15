@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-09-14T15:37:15.591574Z",
+  "fetched_at": "2026-09-15T14:08:08.231056Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -2065,22 +2065,6 @@
       "name": "China/US exchange rate",
       "data": [
         {
-          "date": "2026-06-15",
-          "value": 6.757
-        },
-        {
-          "date": "2026-06-16",
-          "value": 6.7562
-        },
-        {
-          "date": "2026-06-17",
-          "value": 6.7577
-        },
-        {
-          "date": "2026-06-18",
-          "value": 6.7686
-        },
-        {
           "date": "2026-06-22",
           "value": 6.7745
         },
@@ -2295,32 +2279,32 @@
         {
           "date": "2026-09-04",
           "value": 6.7108
+        },
+        {
+          "date": "2026-09-08",
+          "value": 6.7105
+        },
+        {
+          "date": "2026-09-09",
+          "value": 6.7059
+        },
+        {
+          "date": "2026-09-10",
+          "value": 6.7061
+        },
+        {
+          "date": "2026-09-11",
+          "value": 6.708
         }
       ],
       "latest": {
-        "date": "2026-09-04",
-        "value": 6.7108
+        "date": "2026-09-11",
+        "value": 6.708
       }
     },
     "DEXMXUS": {
       "name": "Mexico/US exchange rate",
       "data": [
-        {
-          "date": "2026-06-15",
-          "value": 17.1934
-        },
-        {
-          "date": "2026-06-16",
-          "value": 17.1924
-        },
-        {
-          "date": "2026-06-17",
-          "value": 17.1796
-        },
-        {
-          "date": "2026-06-18",
-          "value": 17.3764
-        },
         {
           "date": "2026-06-22",
           "value": 17.3287
@@ -2536,32 +2520,32 @@
         {
           "date": "2026-09-04",
           "value": 16.863
+        },
+        {
+          "date": "2026-09-08",
+          "value": 16.9137
+        },
+        {
+          "date": "2026-09-09",
+          "value": 16.8941
+        },
+        {
+          "date": "2026-09-10",
+          "value": 16.973
+        },
+        {
+          "date": "2026-09-11",
+          "value": 16.9704
         }
       ],
       "latest": {
-        "date": "2026-09-04",
-        "value": 16.863
+        "date": "2026-09-11",
+        "value": 16.9704
       }
     },
     "DEXCAUS": {
       "name": "Canada/US exchange rate",
       "data": [
-        {
-          "date": "2026-06-15",
-          "value": 1.3984
-        },
-        {
-          "date": "2026-06-16",
-          "value": 1.3982
-        },
-        {
-          "date": "2026-06-17",
-          "value": 1.403
-        },
-        {
-          "date": "2026-06-18",
-          "value": 1.4142
-        },
         {
           "date": "2026-06-22",
           "value": 1.4167
@@ -2777,11 +2761,27 @@
         {
           "date": "2026-09-04",
           "value": 1.3834
+        },
+        {
+          "date": "2026-09-08",
+          "value": 1.3779
+        },
+        {
+          "date": "2026-09-09",
+          "value": 1.3805
+        },
+        {
+          "date": "2026-09-10",
+          "value": 1.3806
+        },
+        {
+          "date": "2026-09-11",
+          "value": 1.3864
         }
       ],
       "latest": {
-        "date": "2026-09-04",
-        "value": 1.3834
+        "date": "2026-09-11",
+        "value": 1.3864
       }
     },
     "DCOILWTICO": {
@@ -3025,10 +3025,6 @@
       "name": "Regular gas price (weekly avg)",
       "data": [
         {
-          "date": "2025-07-21",
-          "value": 3.121
-        },
-        {
           "date": "2025-07-28",
           "value": 3.123
         },
@@ -3263,11 +3259,15 @@
         {
           "date": "2026-09-07",
           "value": 4.157
+        },
+        {
+          "date": "2026-09-14",
+          "value": 4.319
         }
       ],
       "latest": {
-        "date": "2026-09-07",
-        "value": 4.157
+        "date": "2026-09-14",
+        "value": 4.319
       }
     }
   },
