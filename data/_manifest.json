@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-09-23T14:04:13.799783Z",
+  "last_update": "2026-09-24T13:59:58.502341Z",
   "results": {
     "census_wholesale": "OK",
     "food_prices": "OK",
@@ -9,12 +9,12 @@
     "freight_macro": "OK"
   },
   "data_files": [
-    "freight_macro.json",
+    "food_prices.json",
     "census_wholesale.json",
     "trade_tariffs.json",
-    "food_prices.json",
+    "_manifest.json",
     "bls_employment.json",
-    "county_business_patterns.json",
-    "_manifest.json"
+    "freight_macro.json",
+    "county_business_patterns.json"
   ]
 }
