@@ -1,7 +1,7 @@
 {
   "source": "BLS - PPI, CES, QCEW",
   "url": "https://data.bls.gov/cew/",
-  "fetched_at": "2026-09-29T15:19:54.015138Z",
+  "fetched_at": "2026-09-30T15:34:19.230341Z",
   "ppi_wholesale": {
     "WPU00000000": {
       "name": "All commodities PPI",
