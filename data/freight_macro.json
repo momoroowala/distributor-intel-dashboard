@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-10-27T15:05:34.226106Z",
+  "fetched_at": "2026-10-28T15:41:48.431905Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
