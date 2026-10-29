@@ -4,7 +4,7 @@
     "https://ops.fhwa.dot.gov/freight/freight_analysis/faf/",
     "https://api.stlouisfed.org/fred/"
   ],
-  "fetched_at": "2026-10-28T15:41:48.431905Z",
+  "fetched_at": "2026-10-29T15:48:11.907050Z",
   "freight_indicators": {
     "WPUFD4111": {
       "name": "PPI: Long-distance general freight trucking, truckload",
@@ -1167,16 +1167,20 @@
         },
         {
           "date": "2026-07-01",
-          "value": 1560.7
+          "value": 1562.4
         },
         {
           "date": "2026-08-01",
-          "value": 1572.3
+          "value": 1570.6
+        },
+        {
+          "date": "2026-09-01",
+          "value": 1572.2
         }
       ],
       "latest": {
-        "date": "2026-08-01",
-        "value": 1572.3
+        "date": "2026-09-01",
+        "value": 1572.2
       }
     }
   },
@@ -2840,26 +2844,6 @@
       "name": "Crude oil WTI price",
       "data": [
         {
-          "date": "2026-07-29",
-          "value": 86.08
-        },
-        {
-          "date": "2026-07-30",
-          "value": 85.15
-        },
-        {
-          "date": "2026-07-31",
-          "value": 86.16
-        },
-        {
-          "date": "2026-08-03",
-          "value": 81.96
-        },
-        {
-          "date": "2026-08-04",
-          "value": 77.33
-        },
-        {
           "date": "2026-08-05",
           "value": 76.78
         },
@@ -3074,11 +3058,31 @@
         {
           "date": "2026-10-20",
           "value": 107.89
+        },
+        {
+          "date": "2026-10-21",
+          "value": 103.95
+        },
+        {
+          "date": "2026-10-22",
+          "value": 104.27
+        },
+        {
+          "date": "2026-10-23",
+          "value": 109.72
+        },
+        {
+          "date": "2026-10-26",
+          "value": 105.25
+        },
+        {
+          "date": "2026-10-27",
+          "value": 103.37
         }
       ],
       "latest": {
-        "date": "2026-10-20",
-        "value": 107.89
+        "date": "2026-10-27",
+        "value": 103.37
       }
     },
     "GASREGW": {
