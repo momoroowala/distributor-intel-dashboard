@@ -4,7 +4,7 @@
     "https://ers.usda.gov/data-products/food-price-outlook",
     "https://api.bls.gov/publicAPI/v2/timeseries/data/"
   ],
-  "fetched_at": "2026-11-08T15:44:18.251480Z",
+  "fetched_at": "2026-11-09T19:27:00.249010Z",
   "bls_food_cpi": {
     "CUSR0000SAF": {
       "name": "Food at home",
@@ -1931,63 +1931,63 @@
           "month": 1,
           "period": "2026-01",
           "value": 234.414,
-          "pct_change_12m": null
+          "pct_change_12m": 4.5
         },
         {
           "year": 2026,
           "month": 2,
           "period": "2026-02",
           "value": 236.373,
-          "pct_change_12m": null
+          "pct_change_12m": 5.6
         },
         {
           "year": 2026,
           "month": 3,
           "period": "2026-03",
           "value": 235.608,
-          "pct_change_12m": null
+          "pct_change_12m": 4.7
         },
         {
           "year": 2026,
           "month": 4,
           "period": "2026-04",
           "value": 238.183,
-          "pct_change_12m": null
+          "pct_change_12m": 5.1
         },
         {
           "year": 2026,
           "month": 5,
           "period": "2026-05",
           "value": 239.566,
-          "pct_change_12m": null
+          "pct_change_12m": 5.8
         },
         {
           "year": 2026,
           "month": 6,
           "period": "2026-06",
           "value": 235.925,
-          "pct_change_12m": null
+          "pct_change_12m": 2.9
         },
         {
           "year": 2026,
           "month": 7,
           "period": "2026-07",
           "value": 237.931,
-          "pct_change_12m": null
+          "pct_change_12m": 4.1
         },
         {
           "year": 2026,
           "month": 8,
           "period": "2026-08",
           "value": 238.368,
-          "pct_change_12m": null
+          "pct_change_12m": 3.7
         },
         {
           "year": 2026,
           "month": 9,
           "period": "2026-09",
           "value": 240.404,
-          "pct_change_12m": null
+          "pct_change_12m": 3.8
         }
       ]
     },
