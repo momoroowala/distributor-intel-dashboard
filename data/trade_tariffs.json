@@ -4,7 +4,7 @@
     "https://dataweb.usitc.gov",
     "https://api.census.gov/data/timeseries/intltrade/"
   ],
-  "fetched_at": "2026-11-23T20:50:04.127891Z",
+  "fetched_at": "2026-11-24T19:53:44.826597Z",
   "tariff_changes": [],
   "import_volumes": {
     "02": {
